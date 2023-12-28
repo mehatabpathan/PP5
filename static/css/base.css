@@ -44,6 +44,12 @@ body {
     border: 1px solid black;
 }
 
+.btn-outline-black:hover,
+.btn-outline-black:active,
+.btn-outline-black:focus {
+    background: black;
+    color: white !important;
+}
 
 .shop-now-button:hover,
 .shop-now-button:active,
@@ -90,10 +96,11 @@ a.category-badge > span.badge:hover {
     right: 10px;
 }
 
-.btt-link {
+.btt-link,
+.update-link,
+.remove-item {
     cursor: pointer;
 }
-
 
 /* -------------------------------- Media Queries */
 
