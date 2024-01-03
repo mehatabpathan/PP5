@@ -53,6 +53,9 @@ form.addEventListener('submit', function(ev) {
     $('#submit-button').attr('disabled', true);
     $('#payment-form').fadeToggle(100);
     $('#loading-overlay').fadeToggle(100);
+    // console.log($('#payment-form'));
+    // $('#payment-form').hide();
+    // $('#loading-overlay').hide();
 
     var saveInfo = Boolean($('#id-save-info').attr('checked'));
     // From using {% csrf_token %} in the form
