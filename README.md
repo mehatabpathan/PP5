@@ -101,21 +101,15 @@ A visitor to Fresh Nest would be someone who is most likely an adult who is inte
 
 #### EPIC | Admin & Store Management
 - As a store owner, I can add/edit/delete products through an easy-to-use interface so that I can manage the store's contents.
-- As a site owner, I can add/edit/delete interior design services provided through an easy-to-use interface so that I can manage the site's contents.
-- As a site owner, I can add/delete images and location of previous design projects so that I can manage the site's contents.
+- As a site owner, I can add/edit/delete all categories provided through an easy-to-use interface so that I can manage the site's contents.
+- As a site owner, I can add/delete images and location of previous  projects so that I can manage the site's contents.
 - As a site owner, I can view and delete customer enquiries on the front-end without having to access the admin panel.
 
 #### EPIC | User Interaction
 - As a site user, I can submit an contact form so that I can contact about a groceries.
-- As a site user, I can add / edit / delete a testimonial in relation to a consultation I received so that I can give my feedback.
+- As a site user, I can add / edit / delete a  in relation to a consultation I received so that I can give my feedback.
 - As a site user, I can sign up for the website's newsletter so that I can keep up to date with new products and promotions.
 
-#### User stories not yet implemented
-
-The following user stories were scoped out of the project due to time constraints and labelled as "Won't Have" on the project board on Github. It is intended that these user stories will be implemented at a later date.
-
-- As a shopper, I can add products to my saved items so that I can go back and view them at a later date.
-- As a shopper, I can view my saved products so I can find them easily in the one location.
 
 ### Design
 
@@ -231,7 +225,7 @@ The Raleway font is the main font used for the body of the website. This font wa
 
 
 ## Agile Methodology
-Github projects was used to manage the development process using an agile approach. Please see link to project board [here](https://github.com/users/AliOKeeffe/projects/2)
+Github projects was used to manage the development process using an agile approach. Please see link to project board [here](https://github.com/users/mehatabpathan/projects/7)
 
 
 The 5 Epics listed above were documented within the Github project as Milestones. A Github Issue was created for each User Story which was then allocated to a milestone(Epic). Each User Story has defined acceptance criteria to make it clear when the User Story has been completed. The acceptance criteria are further broken down into tasks to facilitate the User Story's execution.
@@ -245,7 +239,7 @@ Two relational databases were used to create this site - during production SQLit
 ## Security Features and Defensive Design
 ### User Authentication
 
-Where I have used Django's Class-based-views; Django's LoginRequiredMixin is used to make sure that any requests to access secure pages by non-authenticated users are redirected to the login page. Django's UserPassesTestMixin is used to limit access based on certain permissions i.e. to ensure users can only edit/delete Testimonials for which they are the author or if the user is the superuser. If the user doesn't pass the test they are shown an HTTP 403 Forbidden error.
+Where I have used Django's Class-based-views; Django's LoginRequiredMixin is used to make sure that any requests to access secure pages by non-authenticated users are redirected to the login page. Django's UserPassesTestMixin is used to limit access based on certain permissions i.e. to ensure users can only edit/delete  for which they are the author or if the user is the superuser. If the user doesn't pass the test they are shown an HTTP 403 Forbidden error.
 
 Where I have used function based views I have used Django's login_required and user_passes_test decorators to restrict access as required. 
 
@@ -260,7 +254,7 @@ Cross-Site Request Forgery (CSRF) tokens were used on all forms throughout this 
 ### Custom error pages:
 Custom Error Pages were created to give the user more information on the error and to provide them with buttons to guide them back to the site.
 
-400 Bad Request - Fresh Nest is unable to handle this request.
+400 Bad Request - Grocery Store is unable to handle this request.
 403 Page Forbidden - Looks like you're trying to access forbidden content. Please log out and sign in to the correct account.
 404 Page Not Found - The page you're looking for doesn't exist.
 500 Server Error - Due to an internal error we are unable to process this request.
