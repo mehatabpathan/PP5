@@ -69,15 +69,15 @@ A visitor to Fresh Nest would be someone who is most likely an adult who is inte
 ### User Stories
 
 #### EPIC | Viewing and Navigation
-- As a Site User, I can intuitively navigate around the site so that I can find content.
-- As a Site User, I can view a list of products so that I can select a product to view.
-- As a shopper, I can click on a product so that I can read the full product details.
-- As a shopper, I can view a specific category of products so I can browse the type of products I'm looking for.
-- As a shopper, I can search all products so that I can find what I am looking for.
-- As a shopper, I can sort all products so that I can view products based on price or title.
-- As a site user, I can view a list of Interior Design Services provided so I can understand what each service entails and make an enquiry if desired.
-- As a site user, I can read testimonials left by other customers so I see what feedback they gave on the Interior Design Services they received.
-- As a site user, I can view pictures of previous interior design projects so that I can see if I like the results and build trust in the service provider.
+- As a Site User, I can intuitively navigate around the grocery store website so that I can find content.
+- As a Site User, I can view a list of products available in the grocery store so that I can select a product to view.
+- As a shopper, I can click on a product in the grocery store so that I can read the full product details.
+- As a shopper, I can view a specific category of grocery products so I can browse the type of products I'm looking for.
+- As a shopper, I can search all grocery products so that I can find what I am looking for.
+- As a shopper, I can sort all grocery products so that I can view products based on price or title.
+- As a site user, I can view a list of Grocery Store Services provided so I can understand what each service entails and make an enquiry if desired.
+- As a site user, I can read feedback left by other customers so I see what feedback they gave on the Grocery Store Services they received.
+- As a site user, I can view pictures of previous grocery store displays and arrangements so that I can see if I like the layout and build trust in the store.
 
 #### EPIC | User Account and Profile
 - As a site user, I can register an account so that I can have a personal account.
@@ -106,7 +106,7 @@ A visitor to Fresh Nest would be someone who is most likely an adult who is inte
 - As a site owner, I can view and delete customer enquiries on the front-end without having to access the admin panel.
 
 #### EPIC | User Interaction
-- As a site user, I can submit an enquiry form so that I can enquire about a design consultation.
+- As a site user, I can submit an contact form so that I can contact about a groceries.
 - As a site user, I can add / edit / delete a testimonial in relation to a consultation I received so that I can give my feedback.
 - As a site user, I can sign up for the website's newsletter so that I can keep up to date with new products and promotions.
 
