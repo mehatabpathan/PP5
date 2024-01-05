@@ -739,46 +739,6 @@ Add the following Config Vars in Heroku:
 The site is now live and operational.
 
 
-## AWS Set Up
-### AWS S3 Bucket
-- Create an AWS account.
-- From the 'Services' tab on the AWS Management Console, search 'S3' and select it.
-- Click 'Create a new bucket', give it a name(match your Heroku app name if possible), and choose the region closest to you.
-- Under 'Object Ownership' select 'ACLs enabled' and leave the Object Ownership as Bucket owner preferred.
-- Uncheck block all public access and acknowledge that the bucket will be public.
-- Click 'Create bucket'.
-- Open the created bucket, go to the 'Properties' tab. Scroll to the bottom and under 'Static website hosting' click 'edit' and change the Static website hosting option to 'enabled'. Copy the default values for the index and error documents and click 'save changes'.
-- Open the 'Permissions' tab, locate the CORS configuration section and add the following code:
-```
-[
-  {
-      "AllowedHeaders": [
-          "Authorization"
-      ],
-      "AllowedMethods": [
-          "GET"
-      ],
-      "AllowedOrigins": [
-          "*"
-      ],
-      "ExposeHeaders": []
-  }
-]
-```
-- In the 'Bucket Policy' section and select 'Policy Generator'.
-- Choose 'S3 Bucket Policy' from the type dropdown.
-- In 'Step 2: Add Statements', add the following settings:
-    - Effect: Allow
-    - Principal: *
-    - Actions: GetObject
-    - ARN: Bucket ARN (copy from S3 Bucket page)
-- Click 'Add Statement'.
-- Click 'Generate Policy'.
-- Copy the policy from the popup that appears
-- Paste the generated policy into the Permissions > Bucket Policy area.
-- Add '/*' at the end of the 'Resource' key, and save.
-- Go to the 'Access Control List' section click edit and enable List for Everyone (public access) and accept the warning box.
-
 
 ### IAM
 - From the 'Services' menu, search IAM and select it.
@@ -805,71 +765,16 @@ The site is now live and operational.
 - Download the CSV file which contains the AWS_SECRET_ACCESS_KEY and your AWS_ACCESS_KEY_ID needed in the Heroku variables as per above list and also in your env.py.
 
 
-### Connecting S3 to Django 
-- Go back to your IDE and install 2 more requirements:
-    - `pip3 install boto3`
-    - `pip3 install django-storages` 
-- Update your requirements.txt file by typing `pip3 freeze --local > requirements.txt` and add storages to your installed apps.
-- Create an if statement in settings.py 
-
-```
-if 'USE_AWS' in os.environ:
-    AWS_STORAGE_BUCKET_NAME = 'insert-your-bucket-name-here'
-    AWS_S3_REGION_NAME = 'insert-your-region-here'
-    AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
-    AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
-
-```
-- Then add the line 
-
-    - `AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'` to tell django where our static files will be coming from in production.
-
-
-- Create a file called custom storages and import both our settings from django.con as well as the s3boto3 storage class from django storages. 
-- Create the following classes:
-
-```
-class StaticStorage(S3Boto3Storage):
-    location = settings.STATICFILES_LOCATION
-
-class MediaStorage(S3Boto3Storage):
-    location = settings.MEDIAFILES_LOCATION
-```
-
-- In settings.py add the following inside the if statement:
-
-```
-STATICFILES_STORAGE = 'custom_storages.StaticStorage'
-STATICFILES_LOCATION = 'static'
-DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
-MEDIAFILES_LOCATION = 'media'
-STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
-MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
-
-```
-
-- and then add the following at the top of the if statement:
-```
-AWS_S3_OBJECT_PARAMETERS = {
-    'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
-    'CacheControl': 'max-age=94608000',
-}
-```
-
-- Go to S3, go to your bucket and click 'Create folder'. Name the folder 'media' and click 'Save'.
-- Inside the folder, click 'Upload', 'Add files', and then select all the images that you are using for your site.
-- Then under 'Permissions' select the option 'Grant public-read access' and click upload.
-- Your static files and media files should be automatically linked from django to your S3 bucket.
 
 ## Forking this repository
-- Locate the repository at this link [Fresh Nest](https://github.com/AliOKeeffe/PP5-Fresh-Nest).
+- Locate the repository at this link [Fresh Nest](https://github.com/mehatabpathan/PP5).
 - At the top of the repository, on the right side of the page, select "Fork" from the buttons available. 
 - A copy of the repository is now created.
 
 ## Cloning this repository
 To clone this repository follow the below steps: 
 
-1. Locate the repository at this link [Fresh Nest](https://github.com/AliOKeeffe/PP5-Fresh-Nest). 
+1. Locate the repository at this link [Fresh Nest](https://github.com/mehatabpathan/PP5). 
 2. Under **'Code'**, see the different cloning options, HTTPS, SSH, and GitHub CLI. Click the prefered cloning option, and then copy the link provided. 
 3. Open **Terminal**.
 4. In Terminal, change the current working directory to the desired location of the cloned directory.
