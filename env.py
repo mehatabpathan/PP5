@@ -4,3 +4,4 @@ os.environ["STRIPE_SECRET_KEY"]="sk_test_51OJxlVH8Vqa8Gi3UgKtiJWpsCAXf3P4cu92kuH
 os.environ["STRIPE_WH_SECRET"]="whsec_yPlbCIQx1YO3nNmat9mVawHR1iBeqZDS"
 os.environ["EMAIL_HOST_USER"]="mehatab.pathan231@gmail.com"
 os.environ["EMAIL_HOST_PASS"]="symytioklgcrdiiw"
+os.environ["CLOUDINARY_URL"]="cloudinary://816261457542735:e2H-2zdWjTrFphGsOtAR58eAoDM@mehatab"
