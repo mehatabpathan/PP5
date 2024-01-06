@@ -21,6 +21,7 @@ body {
 
 .logo-font {
     text-transform: uppercase;
+    margin-top: 0;
 }
 
 .main-logo-link {
@@ -244,7 +245,7 @@ a.category-badge > span.badge:hover {
 
 .btn-file input[type="file"] {
     position: absolute;
-    top: 0;
+    top: 0; 
     right: 0;
     min-width: 100%;
     min-height: 100%;
