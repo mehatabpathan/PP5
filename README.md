@@ -619,7 +619,6 @@ Custom Error Pages were created to give the user more information on the error a
 - 500 Server Error - Due to an internal error we are unable to process this request.
 
 
-
 ### Social Media Marketing 
 For this site, a Facebook business page has been created for organic social media marketing. The Facebook page includes a 'Shop Now' button which takes the user to the Fresh Nest website. The page pairs well with the content media marketing on the main site as images of previous projects and new product arrivals can be shared easily.
 
@@ -629,7 +628,7 @@ For this site, a Facebook business page has been created for organic social medi
 Visitors to the site can sign up to the newsletter and do not need to have an account to do so. A signup box is included in the footer of the site. This allows the business to share news with customers and potential customers including new products/services and special offers. Mailchimp was used to create this service. 
 
 ## Testing
-Testing and results can be found [here](PP5-2/TESTING.md)
+Testing and results can be found [here](/PP5-2/TESTING.md)
 
 ## Deployment - Heroku
 
@@ -703,7 +702,6 @@ Add the following Config Vars in Heroku:
 The site is now live and operational.
 
 
-
 ## Forking this repository
 - Locate the repository at this link [Fresh Nest](https://github.com/mehatabpathan/PP5).
 - At the top of the repository, on the right side of the page, select "Fork" from the buttons available. 
@@ -733,7 +731,6 @@ To clone this repository follow the below steps:
 - [PostgreSQL](https://www.postgresql.org/) was used as the database for this project.
 - [SQLite](https://www.sqlite.org/index.html) - was used as the database during production.
 - [Stripe](https://stripe.com/ie) used for the payments system.
-- [AWS](https://aws.amazon.com/?nc2=h_lg) used for file storage.
 - [Heroku](https://dashboard.heroku.com/login) - was used as the cloud based platform to deploy the site on.
 - [Responsinator](http://www.responsinator.com/) - Used to verify responsiveness of website on different devices.
 - [Balsamiq](https://balsamiq.com/) - Used to generate Wireframe images.
