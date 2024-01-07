@@ -7,6 +7,11 @@ The payment system uses Stripe. Please note that this website is for educational
 To test this system, test card details can be used. A list of these can be found in Stripe's documentation [here](https://stripe.com/docs/testing#cards).
 
 The live link can be found here - [Fresh Nest](https://groceryapp-856a47122c58.herokuapp.com/)
+- The GitHub link can be found here - [Vegan Delights](https://github.com/mehatabpathan/PP5.git)
+
+![Static Badge](https://img.shields.io/badge/Last_Commit-January-red)
+![Static Badge](https://img.shields.io/badge/Contributors-1-blue)
+![Static Badge](https://img.shields.io/badge/Languages-4-greens)
 
 ![Site Mockup](docs/readme_images/site_mockup.png)
 
@@ -624,7 +629,7 @@ For this site, a Facebook business page has been created for organic social medi
 Visitors to the site can sign up to the newsletter and do not need to have an account to do so. A signup box is included in the footer of the site. This allows the business to share news with customers and potential customers including new products/services and special offers. Mailchimp was used to create this service. 
 
 ## Testing
-Testing and results can be found [here](/TESTING.md)
+Testing and results can be found [here](PP5/TESTING.md)
 
 ## Deployment - Heroku
 
@@ -698,32 +703,6 @@ Add the following Config Vars in Heroku:
 - Click View to view the deployed site.
 
 The site is now live and operational.
-
-
-
-### IAM
-- From the 'Services' menu, search IAM and select it.
-- Once on the IAM page, click 'User Groups' from the side bar, then click 'Create group'. Choose a name and click 'Create'.
-- Go to 'Policies', click 'Create New Policy'. Go to the 'JSON' tab and click 'Import Managed Policy'. 
-- Search 'S3' and select 'AmazonS3FullAccess'. Click 'Import'.
-- Get the bucket ARN from 'S3 Permissions' as per above.
-- Delete the '*' from the 'Resource' key and add the following code into the area:
-
-```
-"Resource": [
-    "YOUR-ARN-NO-HERE",
-    "YOUR-ARN-NO-HERE/*"
-]
-```
-
-- Click 'Next Tags' > 'Next Review' and then provide a name and description and click 'Create Policy'.
-- Click'User Groups' and open the created group. Go to the 'Permissions' tab and click 'Add Permissions' and then 'Attach Policies'.
-- Search for the policy you created and click 'Add Permissions'.
-- You need to create a user to put in the group. Select users from the sidebar and click 'Add user'.
-- Give your user a user name, check 'Programmatic Access'.
-- Click 'Next' and select the group you created.
-- Keep clicking 'Next' until you reach the 'Create user' button and click that.
-- Download the CSV file which contains the AWS_SECRET_ACCESS_KEY and your AWS_ACCESS_KEY_ID needed in the Heroku variables as per above list and also in your env.py.
 
 
 
