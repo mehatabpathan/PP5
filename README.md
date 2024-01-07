@@ -64,7 +64,7 @@ The live link can be found here - [Fresh Nest](https://groceryapp-856a47122c58.h
 
 ## User Experience (UX)
 
-A visitor to Fresh Nest would be someone who is most likely an adult who is interested in buying luxurious interior products and high-end interior design services.
+A positive grocery store user experience involves a well-organized layout, friendly staff, and efficient checkout, while factors like cleanliness, product availability, and technology integration further contribute to customer satisfaction and loyalty.
 
 ### User Stories
 
@@ -125,7 +125,7 @@ The colour scheme of the site is mainly gold and light and dark greys. The colou
 Great care was taken to establish a good contrast between background colours and text at all times to ensure maximum user accessibility.
 
 #### Imagery
-There is only one main static image on the site which is of a luxurious dining room on the home page. The colour scheme of the site ties in with this main homepage image which largely consists of golds and greys. The rest of the imagery will be uploaded by the site owner for individual products, services and previous interior projects. 
+There is only one main static image on the site which is of groceries in the store. The colour scheme of the site ties in with this main homepage image which largely consists of black and grey. The rest of the imagery will be uploaded by the site owner for individual products, services. 
 
 #### Fonts
 The Raleway font is the main font used for the body of the website. This font was imported via Google Fonts. Sans Serif is the backup font, in case for any reason the main font isn't being imported into the site correctly.
