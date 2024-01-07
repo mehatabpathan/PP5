@@ -629,7 +629,7 @@ For this site, a Facebook business page has been created for organic social medi
 Visitors to the site can sign up to the newsletter and do not need to have an account to do so. A signup box is included in the footer of the site. This allows the business to share news with customers and potential customers including new products/services and special offers. Mailchimp was used to create this service. 
 
 ## Testing
-Testing and results can be found [here](PP5/TESTING.md)
+Testing and results can be found [here](PP5-2/TESTING.md)
 
 ## Deployment - Heroku
 
