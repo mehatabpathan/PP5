@@ -685,8 +685,7 @@ Add the following Config Vars in Heroku:
 
 |     Variable name     |                           Value/where to find value                           |
 |:---------------------:|:-----------------------------------------------------------------------------:|
-| AWS_ACCESS_KEY_ID     | AWS CSV file(instructions below)                                               |
-| AWS_SECRET_ACCESS_KEY | AWS CSV file(instructions below)                                               |
+| CLOUDINARY_URL        | Created cloudinary Dashboard                                               |
 | DATABASE_URL          | Postgres generated (as per step above)                                        |
 | EMAIL_HOST_PASS       | Password from email client                                                    |
 | EMAIL_HOST_USER       | Site's email address                                                          |
@@ -694,7 +693,6 @@ Add the following Config Vars in Heroku:
 | STRIPE_PUBLIC_KEY     | Stripe Dashboard > Developers tab > API Keys > Publishable key                |
 | STRIPE_SECRET_KEY     | Stripe Dashboard > Developers tab > API Keys > Secret key                     |
 | STRIPE_WH_SECRET      | Stripe Dashboard > Developers tab > Webhooks > site endpoint > Signing secret |
-| USE_AWS               | True (when AWS set up - instructions below)                                   |
 
 ### Deploy
 - NB: Ensure in Django settings, DEBUG is False
