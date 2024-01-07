@@ -613,46 +613,7 @@ Custom Error Pages were created to give the user more information on the error a
 - 404 Page Not Found - The page you're looking for doesn't exist.
 - 500 Server Error - Due to an internal error we are unable to process this request.
 
-## Business Model
 
-Fresh Nest's Business Model is Business to Consumer (B2C). Products and services are sold directly from Fresh Nest to consumers who are the end-users. 
-A customer of Fresh Nest would be someone who is most likely an adult who is interested in buying luxurious interior products and high end interior design services.
-
-## Marketing Strategy
-
-A number of different marketing strategies have been utilised to promote Fresh Nest including SEO, content marketing, social media marketing and email marketing. Each of these strategies have been discussed individually below:  
-
-### SEO
-Several SEO techniques were undertaken in order to ensure the site ranks highly in search engine results:
-
-**Keywords:** 
-
-A mixture of short tail and long tail keywords were carefully considered for the site. Keyword research was performed by checking Google search results, looking at competitor's keywords and by utilising wordtracker.com. 
-
-An initial list of topics and keywords generated can be seen below. This list was then refined based on relevance and authority.
-
-The most relevant keywords have been added to the site's meta-keywords and meta-description. These keywords have also been carefully included in page titles, headings, site content, `<strong></strong>` tags, image alt attributes and anchor tag links across the site. 
-
- ![Keywords](docs/readme_images/seo_keywords.png)
-
-**External Links:**
-
-Included in the site footer are links to other high quality relevant websites including Houzz, Institute of Designers Ireland, and The Interiors Association. These links show search engines that the page is of good quality improving the site's ranking further. 
-
-**Building Trust:**
-
-In order to build brand trust, a testimonial page for interior design services has been included in the site with a link to the page being included in the page footer as well as the main nav bar. 
-
-The page footer also includes links to the privacy policy to inform users about how their data is being collected and processed.
-
-**Sitemap and robots.txt**
-
-A sitemap file with a list of important page URLs was created to ensure that search engines are able to understand the site's structure and easily navigate through the site. This was made using xml-sitemaps.com.
-
-A robots.txt file was created to tell search engines where they are not allowed to go on the website. This improves SEO by increasing the quality of the site
-
-### Content marketing 
-The site showcases high quality images of previous interior design projects projects in order to attract potential new clients. The photos allow the business to show off their expertise and style and build up trust with the customer.
 
 ### Social Media Marketing 
 For this site, a Facebook business page has been created for organic social media marketing. The Facebook page includes a 'Shop Now' button which takes the user to the Fresh Nest website. The page pairs well with the content media marketing on the main site as images of previous projects and new product arrivals can be shared easily.
