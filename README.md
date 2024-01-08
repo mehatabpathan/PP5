@@ -123,17 +123,15 @@ The site has a elegant and clean design with the use of gold detail to give the 
 #### Colour Scheme
 Colour palette from Coolors
 
-![Colour Scheme](docs/readme_images/colour_scheme.png)
+![Colour Scheme](docs/readme_images/color_scheme.png)
 
-The colour scheme of the site is mainly gold and light and dark greys. The colours chosen are quite neutral in order to showcase the Homeware Products and Interior Design Services with minimal distraction. 
-
-Great care was taken to establish a good contrast between background colours and text at all times to ensure maximum user accessibility.
+The colour scheme of the site ipredominantly uses a combination of black, white, and shades of blue. Backgrounds utilize dynamic images with fallback colors, buttons have gradient effects from dark to light blue, and text colors vary from black to white. Specific classes define link and badge colors, and media queries adapt styles for responsiveness. Overall, the scheme achieves a modern and visually appealing design through a careful use of contrast and gradients.
 
 #### Imagery
-There is only one main static image on the site which is of groceries in the store. The colour scheme of the site ties in with this main homepage image which largely consists of black and grey. The rest of the imagery will be uploaded by the site owner for individual products, services. 
+There is only one main static image on the site which is of homepage in the store. The colour scheme of the site ties in with this main homepage image which largely consists of all the colors. The rest of the imagery will be uploaded by the site owner for individual products, services. 
 
 #### Fonts
-The Raleway font is the main font used for the body of the website. This font was imported via Google Fonts. Sans Serif is the backup font, in case for any reason the main font isn't being imported into the site correctly.
+The 'lato font is the main font used for the body of the website. This font was imported via Google Fonts. the 'Lato' font is set as the primary typeface for the text content on the webpage.
 
 #### Wireframes
 
