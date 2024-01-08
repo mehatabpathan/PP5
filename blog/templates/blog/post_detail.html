@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+
+<div class="row m-5 bg-white">
+    <div class="col-12 p-4">
+        <h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
+        <p>{{ post.content }}</p>
+        <p>Category: {{ post.category.name }}</p>
+        <p>Created at: {{ post.created_at }}</p>
+        <a class="btn btn-sm btn-primary mt-1" href="{% url 'post_list' %}">Back to post list</a>
+    </div>
+</div>
+{% endblock %}

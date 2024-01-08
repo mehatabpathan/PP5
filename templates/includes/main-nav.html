@@ -1,0 +1,49 @@
+<div class="collapse navbar-collapse" id="main-nav">
+    <ul class="navbar-nav w-auto mx-auto">
+        <li class="nav-item d-block d-md-none">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'home' %}" id="home-link">
+                Home
+            </a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-categories-link"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                All Caterories
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="all-categories-link">
+                <a href="{% url 'products' %}?category=fruits,vegetables" class="dropdown-item">Fruits and
+                    Vegetables</a>
+                <a href="{% url 'products' %}?category=dairy,eggs" class="dropdown-item ">Dairy and Eggs</a>
+                <a href="{% url 'products' %}?category=beverages" class="dropdown-item ">Beverages</a>
+                <a href="{% url 'products' %}?category=bakery" class="dropdown-item">Bakery</a>
+                <a href="{% url 'products' %}?category=meat,seafood" class="dropdown-item">Meat and Seafood</a>
+                <a href="{% url 'products' %}" class="dropdown-item">All Categories</a>
+            </div>
+        </li>
+
+        <li class="nav-item dropdown">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="specialoffers-link"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Special Offers
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="specialoffers-link">
+                <a href="{% url 'products' %}?category=all arrivals" class="dropdown-item">All Arrivals</a>
+                <a href="{% url 'products' %}?category=deals" class="dropdown-item">Deals</a>
+                <a href="{% url 'products' %}?category=all special offers" class="dropdown-item">All Special Offers</a>
+            </div>
+        </li>
+
+        <li class="nav-item">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'contact' %}">
+                Contact
+            </a>
+
+        </li>
+        <li class="nav-item">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'post_list' %}">
+                Blog
+            </a>
+
+        </li>
+    </ul>
+</div>
