@@ -7,11 +7,6 @@ The payment system uses Stripe. Please note that this website is for educational
 To test this system, test card details can be used. A list of these can be found in Stripe's documentation [here](https://stripe.com/docs/testing#cards).
 
 The live link can be found here - [Fresh Nest](https://groceryapp-856a47122c58.herokuapp.com/)
-- The GitHub link can be found here - [Vegan Delights](https://github.com/mehatabpathan/PP5.git)
-
-![Static Badge](https://img.shields.io/badge/Last_Commit-January-red)
-![Static Badge](https://img.shields.io/badge/Contributors-1-blue)
-![Static Badge](https://img.shields.io/badge/Languages-4-greens)
 
 ![Site Mockup](docs/readme_images/site_mockup.png)
 
@@ -69,7 +64,7 @@ The live link can be found here - [Fresh Nest](https://groceryapp-856a47122c58.h
 
 ## User Experience (UX)
 
-A positive grocery store user experience involves a well-organized layout, friendly staff, and efficient checkout, while factors like cleanliness, product availability, and technology integration further contribute to customer satisfaction and loyalty.
+A visitor to Fresh Nest would be someone who is most likely an adult who is interested in buying luxurious interior products and high-end interior design services.
 
 ### User Stories
 
@@ -130,7 +125,7 @@ The colour scheme of the site is mainly gold and light and dark greys. The colou
 Great care was taken to establish a good contrast between background colours and text at all times to ensure maximum user accessibility.
 
 #### Imagery
-There is only one main static image on the site which is of groceries in the store. The colour scheme of the site ties in with this main homepage image which largely consists of black and grey. The rest of the imagery will be uploaded by the site owner for individual products, services. 
+There is only one main static image on the site which is of a luxurious dining room on the home page. The colour scheme of the site ties in with this main homepage image which largely consists of golds and greys. The rest of the imagery will be uploaded by the site owner for individual products, services and previous interior projects. 
 
 #### Fonts
 The Raleway font is the main font used for the body of the website. This font was imported via Google Fonts. Sans Serif is the backup font, in case for any reason the main font isn't being imported into the site correctly.
@@ -618,6 +613,46 @@ Custom Error Pages were created to give the user more information on the error a
 - 404 Page Not Found - The page you're looking for doesn't exist.
 - 500 Server Error - Due to an internal error we are unable to process this request.
 
+## Business Model
+
+Fresh Nest's Business Model is Business to Consumer (B2C). Products and services are sold directly from Fresh Nest to consumers who are the end-users. 
+A customer of Fresh Nest would be someone who is most likely an adult who is interested in buying luxurious interior products and high end interior design services.
+
+## Marketing Strategy
+
+A number of different marketing strategies have been utilised to promote Fresh Nest including SEO, content marketing, social media marketing and email marketing. Each of these strategies have been discussed individually below:  
+
+### SEO
+Several SEO techniques were undertaken in order to ensure the site ranks highly in search engine results:
+
+**Keywords:** 
+
+A mixture of short tail and long tail keywords were carefully considered for the site. Keyword research was performed by checking Google search results, looking at competitor's keywords and by utilising wordtracker.com. 
+
+An initial list of topics and keywords generated can be seen below. This list was then refined based on relevance and authority.
+
+The most relevant keywords have been added to the site's meta-keywords and meta-description. These keywords have also been carefully included in page titles, headings, site content, `<strong></strong>` tags, image alt attributes and anchor tag links across the site. 
+
+ ![Keywords](docs/readme_images/seo_keywords.png)
+
+**External Links:**
+
+Included in the site footer are links to other high quality relevant websites including Houzz, Institute of Designers Ireland, and The Interiors Association. These links show search engines that the page is of good quality improving the site's ranking further. 
+
+**Building Trust:**
+
+In order to build brand trust, a testimonial page for interior design services has been included in the site with a link to the page being included in the page footer as well as the main nav bar. 
+
+The page footer also includes links to the privacy policy to inform users about how their data is being collected and processed.
+
+**Sitemap and robots.txt**
+
+A sitemap file with a list of important page URLs was created to ensure that search engines are able to understand the site's structure and easily navigate through the site. This was made using xml-sitemaps.com.
+
+A robots.txt file was created to tell search engines where they are not allowed to go on the website. This improves SEO by increasing the quality of the site
+
+### Content marketing 
+The site showcases high quality images of previous interior design projects projects in order to attract potential new clients. The photos allow the business to show off their expertise and style and build up trust with the customer.
 
 ### Social Media Marketing 
 For this site, a Facebook business page has been created for organic social media marketing. The Facebook page includes a 'Shop Now' button which takes the user to the Fresh Nest website. The page pairs well with the content media marketing on the main site as images of previous projects and new product arrivals can be shared easily.
@@ -628,7 +663,7 @@ For this site, a Facebook business page has been created for organic social medi
 Visitors to the site can sign up to the newsletter and do not need to have an account to do so. A signup box is included in the footer of the site. This allows the business to share news with customers and potential customers including new products/services and special offers. Mailchimp was used to create this service. 
 
 ## Testing
-Testing and results can be found [here](/PP5-2/TESTING.md)
+Testing and results can be found [here](/TESTING.md)
 
 ## Deployment - Heroku
 
@@ -684,7 +719,8 @@ Add the following Config Vars in Heroku:
 
 |     Variable name     |                           Value/where to find value                           |
 |:---------------------:|:-----------------------------------------------------------------------------:|
-| CLOUDINARY_URL        | Created cloudinary Dashboard                                               |
+| AWS_ACCESS_KEY_ID     | AWS CSV file(instructions below)                                               |
+| AWS_SECRET_ACCESS_KEY | AWS CSV file(instructions below)                                               |
 | DATABASE_URL          | Postgres generated (as per step above)                                        |
 | EMAIL_HOST_PASS       | Password from email client                                                    |
 | EMAIL_HOST_USER       | Site's email address                                                          |
@@ -692,6 +728,7 @@ Add the following Config Vars in Heroku:
 | STRIPE_PUBLIC_KEY     | Stripe Dashboard > Developers tab > API Keys > Publishable key                |
 | STRIPE_SECRET_KEY     | Stripe Dashboard > Developers tab > API Keys > Secret key                     |
 | STRIPE_WH_SECRET      | Stripe Dashboard > Developers tab > Webhooks > site endpoint > Signing secret |
+| USE_AWS               | True (when AWS set up - instructions below)                                   |
 
 ### Deploy
 - NB: Ensure in Django settings, DEBUG is False
@@ -700,6 +737,33 @@ Add the following Config Vars in Heroku:
 - Click View to view the deployed site.
 
 The site is now live and operational.
+
+
+
+### IAM
+- From the 'Services' menu, search IAM and select it.
+- Once on the IAM page, click 'User Groups' from the side bar, then click 'Create group'. Choose a name and click 'Create'.
+- Go to 'Policies', click 'Create New Policy'. Go to the 'JSON' tab and click 'Import Managed Policy'. 
+- Search 'S3' and select 'AmazonS3FullAccess'. Click 'Import'.
+- Get the bucket ARN from 'S3 Permissions' as per above.
+- Delete the '*' from the 'Resource' key and add the following code into the area:
+
+```
+"Resource": [
+    "YOUR-ARN-NO-HERE",
+    "YOUR-ARN-NO-HERE/*"
+]
+```
+
+- Click 'Next Tags' > 'Next Review' and then provide a name and description and click 'Create Policy'.
+- Click'User Groups' and open the created group. Go to the 'Permissions' tab and click 'Add Permissions' and then 'Attach Policies'.
+- Search for the policy you created and click 'Add Permissions'.
+- You need to create a user to put in the group. Select users from the sidebar and click 'Add user'.
+- Give your user a user name, check 'Programmatic Access'.
+- Click 'Next' and select the group you created.
+- Keep clicking 'Next' until you reach the 'Create user' button and click that.
+- Download the CSV file which contains the AWS_SECRET_ACCESS_KEY and your AWS_ACCESS_KEY_ID needed in the Heroku variables as per above list and also in your env.py.
+
 
 
 ## Forking this repository
@@ -731,6 +795,7 @@ To clone this repository follow the below steps:
 - [PostgreSQL](https://www.postgresql.org/) was used as the database for this project.
 - [SQLite](https://www.sqlite.org/index.html) - was used as the database during production.
 - [Stripe](https://stripe.com/ie) used for the payments system.
+- [AWS](https://aws.amazon.com/?nc2=h_lg) used for file storage.
 - [Heroku](https://dashboard.heroku.com/login) - was used as the cloud based platform to deploy the site on.
 - [Responsinator](http://www.responsinator.com/) - Used to verify responsiveness of website on different devices.
 - [Balsamiq](https://balsamiq.com/) - Used to generate Wireframe images.

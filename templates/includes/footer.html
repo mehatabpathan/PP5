@@ -1,13 +1,13 @@
 {% load static %}
-<footer class="container-fluid">
-    <div class="row py-lg-3 px-lg-3">
+<footer class="container-fluid bg-info mt-5">
+    <div class="row px-lg-3">
         <div class="col-12 col-md-4 px-4 px-md-0 py-4">
             <ul class="nav flex-column divider px-4">
                 <li class="nav-item">
                     <a href="{% url 'products' %}" class="nav-link text-uppercase">All Caterories</a>
                 </li>
                 <li class="nav-item">
-                    <a href="{% url 'products' %}" class="nav-link text-uppercase">Special Offers</a>
+                    <a href="{% url 'products' %}?category=all special offers" class="nav-link text-uppercase">Special Offers</a>
                 </li>
                 <li class="nav-item">
                     <a href="{% url 'contact' %}" class="nav-link text-uppercase">Contact Us</a>
@@ -17,20 +17,11 @@
                 </li>
             </ul>
         </div>
-        {% comment %} <div class="col-12 col-md-4 p-4 text-center">
-            <a href="https://www.houzz.ie/" target="_blank"><img src="{% static 'images/houzz_logo.jpeg' %}"
-                    alt="Houzz Logo" rel="nofollow noopener" class="m-1 member-logo"></a>
-            <a href="https://www.idi-design.ie/" target="_blank"><img
-                    src="{% static 'images/institute_designers_ireland_logo.jpeg' %}"
-                    alt="Institute of Designers Ireland Logo" rel="nofollow noopener" class="m-1 member-logo"></a>
-            <a href="https://www.theinteriorsassociation.ie/" target="_blank"><img
-                    src="{% static 'images/interiors_association_logo.jpeg' %}" alt="Interiors Association Logo"
-                    rel="nofollow noopener" class="m-1 member-logo"></a>
-        </div> {% endcomment %}
-        <div class="col-12 col-md-4 p-4 order-first">
-            <div>
+
+        <div id="mc_embed_signup" class="bg-transparent">
+            <br>
                 <h2 class="mb-4">Stay in touch!</h2>
-                <ul class="list-unstyled list-inline social-networks">
+                <ul class="list-unstyled list-inline divider social-networks">
                     <li class="list-inline-item">
                         <a href="https://www.facebook.com/" target="_blank" rel="noopener"
                             aria-label="Visit our Facebook page (opens in new tab)"><i class="fab fa-facebook"></i></a>
@@ -45,7 +36,10 @@
                             aria-label="Visit our Twitter page (opens in new tab)"><i class="fab fa-twitter"></i></a>
                     </li>
                 </ul>
-            </div>
+        </div> 
+        <div class="col-12 col-md-4 p-4 order-first">
+            
+    
             <!--  Mailchimp Signup Form -->
             <div id="mc_embed_signup" class="bg-transparent">
                 <form

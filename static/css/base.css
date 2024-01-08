@@ -10,6 +10,18 @@ body {
     font-family: 'Lato';
 }
 
+.main-logo-link img {
+    width: 80px;
+}
+
+.bg-light-info {
+    background-color: #73b7c2 !important;
+}
+
+.block-content {
+    min-height: 600px;
+}
+
 /* from Bulma */
 .icon {
     align-items: center;
@@ -17,6 +29,11 @@ body {
     justify-content: center;
     height: 1.5rem;
     width: 1.5rem;
+}
+
+.home-logo-font {
+    font-weight: bold;
+    text-shadow: 4px 4px 2px #3f3f3f;
 }
 
 .logo-font {
@@ -29,9 +46,46 @@ body {
 }
 
 .shop-now-button {
-    background: black;
+    /* background: black; */
     color: white;
     min-width: 260px;
+}
+
+.shop-now-button {
+    position: relative;
+    background: rgb(9, 151, 240);
+    background: linear-gradient(0deg, rgb(9, 117, 240) 0%, rgb(49, 173, 244) 100%);
+    color: #fff;
+    border: none;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.shop-now-button:after {
+    position: absolute;
+    content: " ";
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease;
+    -webkit-transform: scale(.1);
+    transform: scale(.1);
+}
+
+.shop-now-button:hover {
+    color: #fff;
+    border: none;
+    background: transparent !important;
+}
+
+.shop-now-button:hover:after {
+    background: rgb(0, 3, 255);
+    background: linear-gradient(0deg, rgba(2, 126, 251, 1) 0%, rgba(0, 3, 255, 1)100%);
+    -webkit-transform: scale(1);
+    transform: scale(1);
 }
 
 .btn-black {
@@ -41,7 +95,8 @@ body {
 
 .btn-outline-black {
     background: white;
-    color: black !important; /* use important to override link colors for <a> elements */
+    color: black !important;
+    /* use important to override link colors for <a> elements */
     border: 1px solid black;
 }
 
@@ -75,16 +130,16 @@ body {
 }
 
 .overlay {
-	height: 100%;
-	width: 100%;
-	top: 0;
-	left: 0;
-	position: fixed;
-	background: white;
-	z-index: -1;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: white;
+    z-index: -1;
 }
 
-a.category-badge > span.badge:hover {
+a.category-badge>span.badge:hover {
     background: #212529 !important;
     color: #fff !important;
 }
@@ -122,10 +177,10 @@ a.category-badge > span.badge:hover {
 
 /* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
 .arrow-up {
-    width: 0; 
-    height: 0; 
+    width: 0;
+    height: 0;
     border-left: 4px solid transparent;
-    border-right: 4px solid transparent; 
+    border-right: 4px solid transparent;
     border-bottom: 10px solid black;
     position: absolute;
     top: -10px;
@@ -177,16 +232,18 @@ a.category-badge > span.badge:hover {
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
-  .container {
-    max-width: 80%;
-  }
+    .container {
+        max-width: 80%;
+    }
 }
 
 /* Allauth form formatting */
 
 .allauth-form-inner-content p {
-    margin-top: 1.5rem; /* mt-4 */
-    color: #6c757d; /* text-secondary */
+    margin-top: 1.5rem;
+    /* mt-4 */
+    color: #6c757d;
+    /* text-secondary */
 }
 
 .allauth-form-inner-content input {
@@ -204,8 +261,8 @@ a.category-badge > span.badge:hover {
 
 .allauth-form-inner-content button,
 .allauth-form-inner-content input[type='submit'] {
-	/* btn */
-	display: inline-block;
+    /* btn */
+    display: inline-block;
     font-weight: 400;
     color: #fff;
     text-align: center;
@@ -222,18 +279,19 @@ a.category-badge > span.badge:hover {
     border-radius: 0;
 
     /* standard bootstrap btn transitions */
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
 .allauth-form-inner-content button:hover,
-.allauth-form-inner-content input[type='submit']:hover {	
-	color: #fff;
+.allauth-form-inner-content input[type='submit']:hover {
+    color: #fff;
     background-color: #222;
     border-color: #222;
 }
 
 .allauth-form-inner-content a {
-	color: #17a2b8; /* text-info */
+    color: #17a2b8;
+    /* text-info */
 }
 
 /* Product Form */
@@ -245,7 +303,7 @@ a.category-badge > span.badge:hover {
 
 .btn-file input[type="file"] {
     position: absolute;
-    top: 0; 
+    top: 0;
     right: 0;
     min-width: 100%;
     min-height: 100%;
@@ -311,6 +369,19 @@ footer a:hover {
     font: 14px Helvetica, Arial, sans-serif;
 }
 
+#mc_embed_signup {
+   
+    padding-left: 20px; /* Adjust the padding as needed */
+}
+
+#mc_embed_signup h2 {
+    color: #fff; /* Set the text color for the "Stay in touch!" heading */
+}
+
+#mc_embed_signup ul.social-networks {
+    margin-top: 10px; /* Add some top margin to the social networks list */
+}
+
 /* enquiries */
 
 .enquiry-table a {
@@ -320,6 +391,17 @@ footer a:hover {
 
 .enquiry-table a:visited {
     color: grey;
+}
+
+/* products */
+
+.product-card {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+.product-card:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 /* fixed top navbar only on medium and up */
@@ -379,7 +461,8 @@ footer a:hover {
         font-size: .75rem;
     }
 
-    .increment-qty, .decrement-qty {
+    .increment-qty,
+    .decrement-qty {
         padding: .25rem .5rem !important;
     }
 }
