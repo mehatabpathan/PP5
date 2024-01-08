@@ -1,4 +1,4 @@
-# Fresh Nest
+# Grocery Store
 
 At Grocery Store, we are more than just a place to shop for groceries; we are your community's one-stop destination for quality, convenience, and a delightful shopping experience. As your trusted neighborhood grocer, we take pride in providing an extensive selection of fresh, local, and globally sourced products to meet your every need.
 
@@ -6,8 +6,8 @@ The payment system uses Stripe. Please note that this website is for educational
 
 To test this system, test card details can be used. A list of these can be found in Stripe's documentation [here](https://stripe.com/docs/testing#cards).
 
-The live link can be found here - [Fresh Nest](https://groceryapp-856a47122c58.herokuapp.com/)
-- The GitHub link can be found here - [Vegan Delights](https://github.com/mehatabpathan/PP5.git)
+The live link can be found here - [Grocery Store](https://groceryapp-856a47122c58.herokuapp.com/)
+- The GitHub link can be found here - [Grocery Store](https://github.com/mehatabpathan/PP5.git)
 
 ![Static Badge](https://img.shields.io/badge/Last_Commit-January-red)
 ![Static Badge](https://img.shields.io/badge/Contributors-1-blue)

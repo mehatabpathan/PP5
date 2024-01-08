@@ -17,7 +17,24 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
+from django.views.defaults import page_not_found
+from django.shortcuts import render
 
+from django.http import HttpResponseRedirect
+
+class NotFoundRedirectMiddleware:
+    def __init__(self, get_response):
+        self.get_response = get_response
+
+    def __call__(self, request):
+        response = self.get_response(request)
+        if response.status_code == 404:
+            # Redirect to your custom 404 page
+            return HttpResponseRedirect('/custom_404/')
+        return response
+
+def custom_page_not_found(request, exception):
+    return render(request, '404.html', status=404)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -29,5 +46,18 @@ urlpatterns = [
     path('profile/', include('profiles.urls')),
     path('contact/', include('contact.urls')),
     path('blog/', include('blog.urls')),
+    path('custom_404/', custom_page_not_found, name='custom_404'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
+handler404 = 'grocery_store.views.custom_page_not_found'
+
+# Serve custom error pages when DEBUG is True
+if settings.DEBUG:
+    from django.views import defaults as default_views
+
+    urlpatterns += [
+        path('404/', default_views.page_not_found, kwargs={'exception': Exception('Not Found')}),
+        path('400/', default_views.bad_request, kwargs={'exception': Exception('Bad Request')}),
+        path('403/', default_views.permission_denied, kwargs={'exception': Exception('Permission Denied')}),
+        path('500/', default_views.server_error),
+    ]
