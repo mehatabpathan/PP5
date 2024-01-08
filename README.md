@@ -144,87 +144,61 @@ The 'lato font is the main font used for the body of the website. This font was 
 
 <details>
 
- <summary>Home Decor</summary>
+ <summary>Home Page</summary>
 
-![Home Decor](docs/wireframes/home_decor.png)
+![Home Page](docs/wireframes/homepagewf.png)
 </details>
 
 <details>
 
- <summary>Interior Design Services</summary>
+ <summary>All Categories</summary>
 
-![Interior Design Services](docs/wireframes/interior_design_services.png)
-</details>
-
-<details>
-
- <summary>Interior Design Projects</summary>
-
-![Interior Design Projects](docs/wireframes/interior_design_projects.png)
-</details>
-
-<details>
-
- <summary>Testimonials</summary>
-
-![Testimonials](docs/wireframes/testimonials.png)
+![All Categories](docs/wireframes/productswf.png)
 </details>
 
 <details>
 
  <summary>Contact</summary>
 
-![Contact](docs/wireframes/contact.png)
+![Contact](docs/wireframes/contactwf.png)
+</details>
+
+<details>
+
+ <summary>Blog</summary>
+
+![Blog](docs/wireframes/blogwf.png)
 </details>
 
 <details>
 
  <summary>Bag</summary>
 
-![Bag](docs/wireframes/shopping_bag.png)
+![Bag](docs/wireframes/shoppingbagwf.png)
 </details>
 
 <details>
 
  <summary>Checkout</summary>
 
-![Checkout](docs/wireframes/checkout.png)
+![Checkout](docs/wireframes/checkoutwf.png)
 </details>
 
 <details>
 
  <summary>Order Confirmation</summary>
 
-![Order Confirmation](docs/wireframes/order_confirmation.png)
-</details>
-
-<details>
-
- <summary>Enquiries</summary>
-
-![Enquiries](docs/wireframes/enquiries.png)
+![Order Confirmation](docs/wireframes/orderconfowf.png)
 </details>
 
 <details>
 
  <summary>Profile</summary>
 
-![Profile](docs/wireframes/profile.png)
+![Profile](docs/wireframes/profilewf.png)
 </details>
 
 <details>
-
- <summary>Product Management</summary>
-
-![Product Management](docs/wireframes/product_management.png)
-</details>
-
-<details>
-
- <summary>Design Services Management</summary>
-
-![Design Services Management](docs/wireframes/design_service_management.png)
-</details>
 
 
 ## Agile Methodology
