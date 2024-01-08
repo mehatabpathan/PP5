@@ -289,27 +289,21 @@ Custom Error Pages were created to give the user more information on the error a
 
 ![Home page](docs/readme_images/features/home_page.png)
 
-- The home page includes a call to action section which encourages the user to 'shop now' or to browse "design services" with the message "Style Your Space" and an image of stylish dining room. 
-
-**What We Do Section**
-
-![What we do](docs/readme_images/features/what_we_do.png)
-
-- The "What We Do' section gives a brief overview of what the site has to offer and includes relevant keywords in `<strong></strong>` tags to improve the site's search ranking.
+- The home page includes a call to action section which encourages the user to 'shop now' in the background image id added.
 
 ### User Account Pages
 
 **Sign Up**
 
-![Sign Up](docs/readme_images/features/sign_up.png)
+![Sign Up](docs/readme_images/features/signup.png)
 
 **Sign In**
 
-![Sign In](docs/readme_images/features/sign_in.png)
+![Sign In](docs/readme_images/features/signin.png)
 
 **Log Out**
 
-![Sign Out](docs/readme_images/features/sign_out.png)
+![Sign Out](docs/readme_images/features/signout.png)
 
 - Django allauth was installed and used to create the Sign up, Log in and Log out functionality. 
 - Success messages inform the user if they have logged in/ logged out successfully.
