@@ -139,13 +139,6 @@ The 'lato font is the main font used for the body of the website. This font was 
 
  <summary>Home Page</summary>
 
-![Home Page](docs/wireframes/home.png)
-</details>
-
-<details>
-
- <summary>Home Page</summary>
-
 ![Home Page](docs/wireframes/homepagewf.png)
 </details>
 
@@ -198,7 +191,6 @@ The 'lato font is the main font used for the body of the website. This font was 
 ![Profile](docs/wireframes/profilewf.png)
 </details>
 
-<details>
 
 
 ## Agile Methodology
@@ -251,14 +243,14 @@ Custom Error Pages were created to give the user more information on the error a
 
 **Search Bar**
 
-![Search](docs/readme_images/features/search.png)
+![Search](docs/readme_images/features/searchbar.png)
+
 - The search bar displays above the nav bar.
 - On smaller screens, this bar becomes a search icon which when clicked will drop down the full bar.
 - Any searched word will match itself to any text in the product's title, or description and display the results on the product's page.
 
 
 **User Icon**
-
 
 - The User icon navigation link is a drop down menu which includes the Sign up and Log in links. 
 - Once a user has signed in, their username will display beside the user icon.
@@ -274,12 +266,12 @@ Custom Error Pages were created to give the user more information on the error a
 
 **Bag Icon**
 
-![bag](docs/readme_images/features/bag.png)
+![bag](docs/readme_images/features/shoppingbag.png)
 - Located on the right side of the navbar next to the User icon is the bag Icon.
 - Once a product is added to the bag, a number displaying the total quantity of items appears, located at the top right of the bag icon.
 - As the user adds products to their bag, a toast message appears in the top right-hand corner of the screen informing the user that the item has been added, giving them a snapshot of the bag contents and the total cost of the bag.
 
-![bag total](docs/readme_images/features/bag_total.png)
+![bag total](docs/readme_images/features/bagtotal.png)
 - Clicking the bag icon navigates the user to the shopping bag page which displays a summary of what's been added.
 
 ### Footer
@@ -287,10 +279,8 @@ Custom Error Pages were created to give the user more information on the error a
 ![footer](docs/readme_images/features/footer.png)
 
 - The footer appears at the bottom of every page.
-- The footer section includes links to Facebook, Instagram, Twitter and Pinterest
+- Social media icons (Facebook, Instagram, Twitter) are included with links to respective profiles.
 - There is a newsletter signup section powered by Mailchimp where the user can input their email address to signup to the monthly newsletter.
-- The Quick Links section has links to the main parts of the site including 'Contact Us' and 'Privacy Policy'.
-- On the right hand side of the footer there are links high quality relevant websites including Houzz, Institute of Designers Ireland, and The Interiors Association. These links were included to increase the search rating of the website.
 - Clicking all external links will open up the respective website in another tab to avoid pulling the user away from the site.
 
 ### Home Page
