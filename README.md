@@ -314,28 +314,22 @@ Custom Error Pages were created to give the user more information on the error a
 ### Profile
 **Delivery Details**
 
-![Delivery Details](docs/readme_images/features/delivery_info.png)
+![Delivery Details](docs/readme_images/features/myprofile.png)
 - The delivery details section stores the user's delivery address and phone number.
 - The information provided here is used to autofill the delivery address when placing an order.
 
-**Order History**
-
-![Order History](docs/readme_images/features/order_history.png)
-- The order history section displays a list of every order the user has placed.
-- The table displays the order number, date it was ordered and the order total.
-- Clicking the order number will take the user to a summary page of that order.
-
-### Home Decor (Products)
+### Products page
 
 ![all products](docs/readme_images/features/products_all.png)
 - When clicking the 'Home Decor' link in the navbar the dropdown menu will show all the different categories including 'Sofas', 'Tables', 'Chairs', 'Lighting' and 'Textiles'. 
 
-![Categories](docs/readme_images/features/categories.png)
+![Products](docs/readme_images/features/products.png)
+
 - The 'All' link will display a list of all products from the database.
 - Clicking any of the categories will filter the products to only show products from the category selected.
-- The category selected will display as the page heading.
+- The products selected will display as the page heading.
 
-![products](docs/readme_images/features/products.png)
+![All Categories](docs/readme_images/features/all_categories.png)
 
 
 - Each product card shows an image of the product, its title, excerpt and price.
@@ -347,9 +341,9 @@ Custom Error Pages were created to give the user more information on the error a
 
 ### Product Detail
 
-![Product Detail](docs/readme_images/features/product_detail.png)
+![Product Detail](docs/readme_images/features/productdetail.png)
 - When the user clicks on an individual product card they are taken to the full product details. The link is a bootstrap stretched link so clicking anywhere on the card will work.
-- The product detail page displays the product image, title, excerpt, price, product details and estimated dispatch time.
+- The product detail page displays the product image, title, price, product details.
 - If the user is a superuser, edit and delete buttons will appear below these details.
 
 **Quantity Buttons**
@@ -363,8 +357,9 @@ Custom Error Pages were created to give the user more information on the error a
 ### Home Decor Management
 **Add Product**
 
-![add product](docs/readme_images/features/add_product.png)
-- The add product page can be accessed by clicking the 'Add Product' button on the Home Decor page or in the user dropdown menu, under Home Decor Management. These options are only visible to superusers.
+![add product](docs/readme_images/features/productmanagement.png)
+
+- The add product page can be accessed by clicking the 'Product management' button on the MyAccounts. These options are only visible to superusers.
 - If a user tries to add a product (by changing the url) without being a superuser they are redirected to a custom 403 page.
 - The user must fill out all the fields that have an Asterix. If the form is submitted with any of these fields left blank or with just whitespace then an error message will appear above that particular field, notifying the user of the issue.
 - The SKU field must be unique. An error message will appear if the SKU already exists.
@@ -375,8 +370,9 @@ Custom Error Pages were created to give the user more information on the error a
 
 **Edit Product**
 
-![edit product](docs/readme_images/features/edit_product.png)
-- The superuser can choose to edit a Product by clicking the edit button on the product card or on the product detail page. 
+![edit product](docs/readme_images/features/editproduct.png)
+
+- The superuser can choose to edit a Product by clicking the edit button on the product card or on the product Management page. 
 - The form opens with all fields populated with the original content.
 - The image field displays a thumbnail of the existing image and has a checkbox option to remove it. Checking this will change the image to the default image.
 - If a user tries to add a product (by changing the url) without being a superuser they are redirected to a custom 403 page.
@@ -384,14 +380,14 @@ Custom Error Pages were created to give the user more information on the error a
 
 **Delete Product**
 
-![delete product](docs/readme_images/features/delete_product.png)
 - The superuser can choose to delete a Product by clicking the delete button on the product card or on the product detail page. 
 - The superuser is asked to confirm if they wish to delete the product or cancel.
 - The superuser will receive a success message notifying them that the product has been successfully deleted.
 
 ### Bag
 
-![shopping bag](docs/readme_images/features/shopping_bag.png)
+![shopping bag](docs/readme_images/features/shoppingbagtotal.png)
+
 - When the user clicks on the shopping bag icon in the nav bar they are taken to the shopping bag page which shows the products which the user has added to their cart, unit price, quantity and subtotal.
 
 **Quantity Buttons**
@@ -401,17 +397,11 @@ Custom Error Pages were created to give the user more information on the error a
 
 **Update and Delete Buttons**
 
-![Update Delete buttons](docs/readme_images/features/update_delete_buttons.png)
+![Update Delete buttons](docs/readme_images/features/update_del.png)
 - Clicking the 'update' icon button saves any changes to the quantity and updates the item's subtotal.
 - Clicking the 'Bin' icon button removes the item completely from the user's bag.
 - If the user manually types in a negative number and clicks 'update', the item will be removed from the item from the bag.
 - If the user manually types in a number >99 and clicks 'update' an error message will display informing the user of the correct parameters.
-
-**Total Section**
-- At the end of the line items is a summary of the costs.
-- The summary features the bags total, delivery cost and the grand total to pay.
-- Underneath the grand total users will find a message informing them of how much more they need to spend to receive free delivery if they haven't already met the free delivery threshold (€250). 
-- Beneath the grand total is two buttons. From here the user can either continue to the checkout or return to the products page by clicking 'Continue Shopping'.
 
 ### Checkout 
 
@@ -425,11 +415,13 @@ Custom Error Pages were created to give the user more information on the error a
 - If a user leaves a required field empty, inputs whitespace in a required field or includes text in the phone number field an error message will prompt the user to 'Fill in the field' or 'match the format requested'
 
 **Order Summary**
+
 - The order summary section details all the items about to be purchased, along with the quantity, subtotal and a grand total.
 - Next to the order summary title will be a number reflecting the total number of items that appear in the order.
 - Clicking the product image in the summary will take the user to that product's detail page.
 
 **Payment**
+
 - The card payment is handled by Stripe to ensure secure payment.
 - Incorrect card numbers will automatically show an invalid card number error.
 - A loading screen will appear when a payment is being processed to stop the user clicking away.
@@ -439,129 +431,29 @@ Custom Error Pages were created to give the user more information on the error a
 
 **Confirmation**
 
-![order_confirmation](docs/readme_images/features/order_confirmation.png)
+![order_confirmation](docs/readme_images/features/orderconfo.png)
 - Once the order has been processed the user is taken to the checkout success page.
 This page summarises the completed order.
 - An email will be sent to the user with their order confirmation
-- At the end of the summary is a 'Keep Shopping' button that takes the user back to the Home Decor page.
+- At the end of the summary is a 'Keep Shopping' button that takes the user back to the Home page.
 
-### Interior Design Services
-
-![Design Services](docs/readme_images/features/design_services.png)
-- The Interior Design Services page can be accessed by clicking on the link in the nav bar. 
-- When the user navigates to the Interior Design Services page they are presented with a list of all Interior Design Services from the database including image, title and detailed description. 
-- An "Enquire Now" button displays beside each service which will take the user to the Contact form when clicked.
-- If the user is a superuser, edit and delete buttons will display below each services' details instead of the enquire now button.
-
-### Design Services Management
-**Add Service**
-
-![Add Service](docs/readme_images/features/add_service.png)
-- The add service page can be accessed by clicking the 'Add Service' button on the Interior Design Services page or in the user dropdown menu, under Design Services Management. These options are only visible to superusers.
-- If a user tries to add a service (by changing the url) without being a superuser they are redirected to a custom 403 page.
-- The user must fill out all the fields that have an Asterix. If the form is submitted with any of these fields left blank or with just whitespace then an error message will appear above that particular field, notifying the user of the issue.
-- The user can upload a photo if they wish. If they choose not to, a default image displays as their service image.
-- Clicking the 'Add Service' button at the bottom of the form will create the service providing there are no errors on the form.
--  The user will receive a success message notifying them that the service has been successfully added.
-
-**Edit Service**
-
-![edit Service](docs/readme_images/features/edit_service.png)
-- The superuser can choose to edit a Service by clicking the edit button under the service description on the Interior Design Services Page. 
-- The form opens with all fields populated with the original content.
-- The image field displays a thumbnail of the existing image and has a checkbox option to remove it. Checking this will change the image to the default image.
-- If a user tries to add a service (by changing the url) without being a superuser they are redirected to a custom 403 page.
-- The superuser will receive a success message notifying them that the service has been successfully updated.
-
-**Delete Service**
-
-![Delete Service](docs/readme_images/features/delete_service.png)
-- The superuser can choose to delete a Service by clicking the delete button under the service description on the Interior Design Services Page.
-- The superuser is asked to confirm if they wish to delete the service or cancel.
-- The superuser will receive a success message notifying them that the service has been successfully deleted.
-
-### Interior Design Projects
-
-![Design Projects](docs/readme_images/features/design_projects.png)
-- When the user clicks on the Interior Design Projects tab in the nav bar they are taken to a page displaying pictures of previous projects completed by Fresh Nest.
-- When the user hovers over the image on Desktop view, the type of design service and location will appear in the centre of the image.
-- When the user views the page on mobile, the type of design service and location will display below the image.
-- When the user clicks on the image it will open up in a new tab.
-
-### Previous Projects Management
-**Add Previous Project**
-
-![Add Project](docs/readme_images/features/add_project.png)
-- The add project page can be accessed by clicking the 'Add Picture' button on the Interior Design Projects page or in the user dropdown menu, under Previous Project Management. These options are only visible to the superuser.
-- If a user tries to add a Previous Project (by changing the url) without being a superuser they are redirected to a custom 403 page.
-- The form contains a drop down menu where the user can select the type of Interior Design Service that the project relates to.
-- The user must enter a project location and project image or the form won't submit.
-- Clicking the 'Add Project' button at the bottom of the form will create the project providing there are no errors on the form.
--  The user will receive a success message notifying them that the project has been successfully added.
-
-**Delete Project**
-
-![Delete Project](docs/readme_images/features/delete_project.png)
-- The superuser can choose to delete a Project by clicking the X Icon button on the top right hand corner of the image.
-
-![Delete Image](docs/readme_images/features/delete_image.png)
-- The superuser is asked to confirm if they wish to delete the project or cancel.
-- The superuser will receive a success message notifying them that the project has been successfully deleted.
-
-
-### Testimonials
-
-![Testimonials](docs/readme_images/features/testimonials.png)
-- The testimonials page can be accessed by clicking the link in the nav bar.
-- When the user navigates to the Testimonials page they can see all testimonials left by previous clients. 
-- Each testimonial displays the Design Service they relate to, the date and the user's name.
-
-**Add Testimonial**
-
-![Add Testimonial](docs/readme_images/features/add_testimonial.png)
-- When a logged-in user clicks on the "Add Testimonial" button on the Testimonials page, they can see a user-friendly form where they can add a new Testimonial to the site.
-- If the user is not logged in they are redirected to the log-in page.
-- The completed testimonial is automatically populated with the user's username and date underneath the body.
-
-**Edit Testimonial**
-
-![Edit Testimonial](docs/readme_images/features/edit_testimonial.png)
-- The user is able to edit their own testimonials by clicking the edit button which display beside their own testimonial on the Testimonials Page.
-- The edit form fields are pre-populated with the existing testimonial text.
-- If a user tries to update a testimonial (by changing the url) without being signed in they are redirected to the log in page.
-- If a user tries to update another user's testimonial (by changing the url) they receive a custom 403 error.
-- The superuser can edit anyone's testimonial.
-- The user will receive a success message notifying them that the testimonial has been successfully updated.
-
-**Delete Testimonial**
-
-![Delete Testimonial](docs/readme_images/features/delete_testimonial.png)
-- The user can choose to delete their own testimonial by clicking the delete button which display beside their own testimonial on the Testimonials Page.
-- The user is asked to confirm if they wish to delete the testimonial or cancel.
-- The user will receive a success message notifying them that the testimonial has been successfully deleted.
-- If a user tries to delete a testimonial (by changing the url) without being signed in they are redirected to the log in page.
-- If a user tries to delete another user's testimonial (by changing the url) they receive a custom 403 error.
-- The superuser can delete anyone's testimonial.
 
 ### Contact Form
 
-![Enquiry Form](docs/readme_images/features/enquiry_form.png)
+![Enquiry Form](docs/readme_images/features/contact.png)
+
 - A user can open up the contact form by clicking on the "Enquire Now" button on the Interior Design Services page or by clicking the 'Contact' button in the Nav bar.
 - If the user is logged in, the email field is prepopulated with the user's email address. 
 - The form contains a drop down menu where the user can select the type of enquiry from a list so that the site owner knows what the enquiry is about.
 - The user must fill out all the fields that have an Asterix. If the form is submitted with any of these fields left blank or with just whitespace then an error message will appear above that particular field, notifying the user of the issue.
 - When the form is submitted, the user receives an email confirmation of their enquiry so that they have a record of it.
 
-### Enquiries Dashboard
+### Blog
 
-![Enquiries Dashboard](docs/readme_images/features/enquiry_dashboard.png)
-- When the site owner is logged in, an Enquiries Management option appears in the User drop-down menu.
-- When the site owner navigates to the Enquiries Management page they can see a list of user enquiries sorted from newest to oldest.
-- Emails that have been read are greyed out.
-- When the site owner clicks on an enquiry they are taken to the individual enquiry detail.
+![Blog Post](docs/readme_images/features/blog.png)
 
-![Enquiry Detail](docs/readme_images/features/enquiry_detail.png)
-- The site owner can choose to delete the enquiry or to go back to the list of enquiries.
+- Blog Post is written by admin
+
 
 ### Error Pages
 Custom Error Pages were created to give the user more information on the error and to guide them back to the site.
