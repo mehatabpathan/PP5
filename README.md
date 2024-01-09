@@ -125,7 +125,7 @@ Colour palette from Coolors
 
 ![Colour Scheme](docs/readme_images/color_scheme.png)
 
-The colour scheme of the site ipredominantly uses a combination of black, white, and shades of blue. Backgrounds utilize dynamic images with fallback colors, buttons have gradient effects from dark to light blue, and text colors vary from black to white. Specific classes define link and badge colors, and media queries adapt styles for responsiveness. Overall, the scheme achieves a modern and visually appealing design through a careful use of contrast and gradients.
+The colour scheme of the site predominantly uses a combination of black, white, and shades of blue. Backgrounds utilize dynamic images with fallback colors, buttons have gradient effects from dark to light blue, and text colors vary from black to white. Specific classes define link and badge colors, and media queries adapt styles for responsiveness. Overall, the scheme achieves a modern and visually appealing design through a careful use of contrast and gradients.
 
 #### Imagery
 There is only one main static image on the site which is of homepage in the store. The colour scheme of the site ties in with this main homepage image which largely consists of all the colors. The rest of the imagery will be uploaded by the site owner for individual products, services. 
