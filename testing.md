@@ -230,13 +230,13 @@ All forms which include an image upload field show the same error below. This re
 No errors were found when passing my CSS files through the official [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input)
 
 *base.css*
-![base.ccs validation](docs/readme_images/base_css_validation.png)
+![base.ccs validation](docs/readme_images/validations/base_css.png)
 
 *checkout.css*
-![checkout.ccs validation](docs/readme_images/checkout_css_validation.png)
+![checkout.ccs validation](docs/readme_images/validations/checkout_css.png)
 
 *profile.css*
-![profile.ccs validation](docs/readme_images/profile_css_validation.png)
+![profile.ccs validation](docs/readme_images/validations/profile_css.png)
 
 
 ### JSHINT
@@ -244,31 +244,28 @@ All Javascript was passed through [Jshint](https://jshint.com/) with no issues.
 
 **Base**
 
-![base.html JS validation](docs/readme_images/js_validation/base.html_js.png)
+![base.html JS validation](docs/readme_images/validations/basejs.png)
 
 **Products**
 
-![products.html JS validation](docs/readme_images/js_validation/products_js.png)
+![products.html JS validation](docs/readme_images/validations/addprojs.png)
 
 **Profile**
 
-![profile JS validation](docs/readme_images/js_validation/profile_js.png)
+![profile JS validation](docs/readme_images/validations/profilejs.png)
 
 **Checkout**
 
-![Checkout JS validation](docs/readme_images/js_validation/stripe_elements.js_js.png)
+![Checkout JS validation](docs/readme_images/validations//stripeelejs.png)
 
 **Bag**
 
-![Bag JS validation](docs/readme_images/js_validation/bag.html_js.png)
+![Bag JS validation](docs/readme_images/validations/bag_js.png)
 
 **Quantity Input**
 
-![Quantity Input JS validation](docs/readme_images/js_validation/quantity_input_script.html_js.png)
+![Quantity Input JS validation](docs/readme_images/validations/quantityinputjs.png)
 
-**Image Selector**
-
-![Image Selector JS validation](docs/readme_images/js_validation/add_image_js.png)
 
 
 ### Python Validation - Pycodestyle
