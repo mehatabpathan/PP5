@@ -275,7 +275,7 @@ The only errors displayed (as per below screenshot) can be ignored. The majority
 
 I have ignored the the formatting errors related to env.py as they relate to my Secret Keys and Database URL being to long. This file is not committed to github.
 
-![Python Linter Errors](docs/readme_images/python_linter_errors.png)
+![Python Linter Errors](docs/readme_images/validations/pylinter.png)
 
 ### Lighthouse
 
@@ -285,8 +285,8 @@ Lighthouse validation was run on all pages in order to check accessibility and p
 |--------------------------------|:------------:|:-------------:|:---------------:|:---:|
 |                                |              |               |                 |     |
 | Desktop                        |              |               |                 |     |
-| Home                           |           98 |           100 |             100 | 100 |
-| Products                       |           98 |           100 |             100 | 100 |
+| Home                           |           98 |            95 |             95  | 100 |
+| Products                       |          100 |            87 |             91  |  90 |
 | Product Detail                 |           98 |            98 |             100 | 100 |
 | Add Product                    |           99 |           100 |             100 | 100 |
 | Edit Product                   |           99 |           100 |             100 | 100 |
@@ -296,17 +296,6 @@ Lighthouse validation was run on all pages in order to check accessibility and p
 | Checkout Success               |           99 |            98 |             100 | 100 |
 | Profile                        |           98 |           100 |             100 | 100 |
 | Order History                  |           97 |            98 |             100 | 100 |
-| Interior Design Services       |           99 |           100 |             100 | 100 |
-| Add Interior Design Service    |           99 |           100 |             100 | 100 |
-| Edit Interior Design Service   |           99 |           100 |             100 | 100 |
-| Delete Interior Design Service |           99 |           100 |             100 | 100 |
-| Interior Design Projects       |           99 |           100 |             100 | 100 |
-| Add Interior Design Project    |           99 |           100 |             100 | 100 |
-| Delete Interior Design         |           99 |           100 |             100 | 100 |
-| Testimonials                   |           99 |            98 |             100 | 100 |
-| Add Testimonial                |           99 |           100 |             100 | 100 |
-| Edit Testimonial               |           99 |           100 |             100 | 100 |
-| Delete Testimonial             |           99 |           100 |             100 | 100 |
 | Contact                        |           99 |           100 |             100 | 100 |
 | Enquiries Dashboard            |           99 |           100 |             100 | 100 |
 | Enquiry Detail                 |           99 |           100 |             100 | 100 |
@@ -338,13 +327,10 @@ The Website was tested on Google Chrome, Firefox, Safari browsers with no issues
 |                                  |                               | (Not visible if user in session)                             | Pass      |
 | login Link                       | Click                         | Redirect to login page                                       | Pass      |
 |                                  |                               | (Not visible if user in session)                             | Pass      |
-| Home Decor Management Link       | Click                         | Redirect to add_product page                                 | Pass      |
-|                                  |                               | (Only visible if superuser in session)                       | Pass      |
-| Design Service Management Link   | Click                         | Redirect to add_service page                                 | Pass      |
-|                                  |                               | (Only visible if superuser in session)                       | Pass      |
-| Previous Project Management Link | Click                         | Redirect to add_project_image page                           | Pass      |
+| Product Management Link       | Click                         | Redirect to add_product page                                 | Pass      |
 |                                  |                               | (Only visible if superuser in session)                       | Pass      |
 | Enquiries Link                   | Click                         | Redirect to enquiries_dashboard page                         | Pass      |
+| Link Text                 | Click                         | Blog page                         | Pass      |
 |                                  |                               | (Only visible if superuser in session)                       | Pass      |
 | My Profile Link                  | Click                         | Redirect to user profile page                                | Pass      |
 |                                  |                               | (Only visible if user in session)                            | Pass      |
@@ -360,13 +346,11 @@ The Website was tested on Google Chrome, Firefox, Safari browsers with no issues
 |                                  |                               | (Not visible if user in session)                             | Pass      |
 | login Link                       | Click                         | Redirect to login page                                       | Pass      |
 |                                  |                               | (Not visible if user in session)                             | Pass      |
-| Home Decor Management Link       | Click                         | Redirect to add_product page                                 | Pass      |
-|                                  |                               | (Only visible if superuser in session)                       | Pass      |
-| Design Service Management Link   | Click                         | Redirect to add_service page                                 | Pass      |
-|                                  |                               | (Only visible if superuser in session)                       | Pass      |
-| Previous Project Management Link | Click                         | Redirect to add_project_image page                           | Pass      |
+| Product  Management Link       | Click                         | Redirect to add_product page                                 | Pass      |
 |                                  |                               | (Only visible if superuser in session)                       | Pass      |
 | Enquiries Link                   | Click                         | Redirect to enquiries_dashboard page                         | Pass      |
+| Link Text                 | Click                         | Blog page                         | Pass      |
+|                                  |                               | (Only visible if superuser in session)                       | Pass      |
 |                                  |                               | (Only visible if superuser in session)                       | Pass      |
 | My Profile Link                  | Click                         | Redirect to user profile page                                | Pass      |
 |                                  |                               | (Only visible if user in session)                            | Pass      |
