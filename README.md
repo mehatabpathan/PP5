@@ -13,7 +13,7 @@ The live link can be found here - [Grocery Store](https://groceryapp-856a47122c5
 ![Static Badge](https://img.shields.io/badge/Contributors-1-blue)
 ![Static Badge](https://img.shields.io/badge/Languages-4-greens)
 
-![Site Mockup](docs/readme_images/site_mockup.png)
+![Site Mockup](docs/readme_images/amiresponsive.png)
 
 - [User Experience (UX)](#user-experience--ux-)
   * [User Stories](#user-stories)
