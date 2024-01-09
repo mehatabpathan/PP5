@@ -6,7 +6,7 @@ body {
     background: url(https://res.cloudinary.com/mehatab/image/upload/v1704494469/homepage_rhbxjq.jpg) no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
-    color: #aab7c4;
+    color: #f1f4f7;
     font-family: 'Lato';
 }
 
