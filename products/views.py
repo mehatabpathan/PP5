@@ -4,8 +4,9 @@ from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
 
-from .models import Product, Category
+from .models import Product, Category, ProductComment
 from .forms import ProductForm, ProductCommentForm
+from profiles.models import UserProfile
 
 # Create your views here.
 
@@ -66,12 +67,32 @@ def product_detail(request, product_id):
 
     product = get_object_or_404(Product, pk=product_id)
     form = ProductCommentForm()
+    comments = ProductComment.objects.filter(product=product)
     context = {
         'product': product,
         'form': form,
+        'comments': comments,
     }
+    return render(request, 'products/product_detail.html', context)
 
 
+@login_required
+def add_comment(request, product_id):
+    product = Product.objects.get(id=product_id)
+    comment_form = ProductCommentForm(request.POST)
+    if comment_form.is_valid():
+        comment = comment_form.save(commit=False)
+        user_profile = UserProfile.objects.get(user=request.user)
+        comment.user = user_profile
+        comment.product = product
+        comment.save()
+        messages.success(request, 'Comment successfully added')
+    comments = ProductComment.objects.filter(product=product)
+    context = {
+        'product': product,
+        'form': comment_form,
+        'comments': comments,
+    }
     return render(request, 'products/product_detail.html', context)
 
 

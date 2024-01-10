@@ -144,7 +144,43 @@
             {% endwith %}
           </div>
         </form>
-        {{form.as_p}}
+        {% if user.is_authenticated %}
+          <div class="container">
+            <div class="row">
+                <div class="col">
+                  <p>Leave a comment as: {{ user.username }}</p>
+                  <form method="POST" action="{% url 'add_comment' product.pk%}">
+                    {{form.as_p}}
+                    {% csrf_token %}
+                    <button type="submit" class="btn btn-outline-dark">Submit</button>
+                  </form>
+                </div>
+            </div>
+          </div>
+      {% endif %}
+  </div>
+  {% if comments %}
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="card recipe-detail-card">
+                <h3 class="card-header recipe-detail-header text-left">Comments</h3>
+                <div class="card-body">
+                    {% for comment in comments %}
+                    <div>
+                        <p class="font-weight-bold">
+                            {{ comment.user }}
+                        </p>
+                        {{ comment.message | linebreaks }}
+                        <hr>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}
       </div>
     </div>
   </div>
