@@ -290,15 +290,13 @@ Lighthouse validation was run on all pages in order to check accessibility and p
 | Product Detail                 |           98 |            98 |             100 | 100 |
 | Add Product                    |           99 |           100 |             100 | 100 |
 | Edit Product                   |           99 |           100 |             100 | 100 |
-| Confirm Delete Product         |           99 |           100 |             100 | 100 |
 | Bag                            |           98 |            98 |             100 | 100 |
 | Checkout                       |           94 |            96 |             100 | 100 |
 | Checkout Success               |           99 |            98 |             100 | 100 |
 | Profile                        |           98 |           100 |             100 | 100 |
 | Order History                  |           97 |            98 |             100 | 100 |
 | Contact                        |           99 |           100 |             100 | 100 |
-| Enquiries Dashboard            |           99 |           100 |             100 | 100 |
-| Enquiry Detail                 |           99 |           100 |             100 | 100 |
+| Blog                           |           99 |           100 |             100 | 100 |
 | Sign In                        |           99 |            98 |              98 | 100 |
 | Sign Up                        |           99 |            98 |             100 | 100 |
 | Log Out                        |           99 |           100 |             100 | 100 |
@@ -359,17 +357,18 @@ The Website was tested on Google Chrome, Firefox, Safari browsers with no issues
 | Bag Link                         | Click                         | Redirect to bag page                                         | Pass      |
 |                                  |                               |                                                              |           |
 | Main Nav                         |                               |                                                              |           |
-| Home Decor Dropdown              | Click                         | Open Home Decor dropdown                                     | Pass      |
-| All Link                         | Click                         | Redirect all products page                                   | Pass      |
-| Sofas Link                       | Click                         | Redirect to prints page filtered to sofas                    | Pass      |
-| Chairs Link                      | Click                         | Redirect to prints page filtered to chairs                   | Pass      |
-| Tables Link                      | Click                         | Redirect to prints page filtered to tables                   | Pass      |
-| Lighting Link                    | Click                         | Redirect to prints page filtered to lighting                 | Pass      |
-| Textiles Link                    | Click                         | Redirect to prints page filtered to textiles                 | Pass      |
-| Interior Design Services Link    | Click                         | Open Interior Design Services Page                           | Pass      |
-| Interior Design Projects Link    | Click                         | Open Interior Design Projects Page                           | Pass      |
-| Testimonials Link                | Click                         | Open Testimonials Page                                       | Pass      |
+| All Categories Dropdown          | Click                         | Open All Categories dropdown                                 | Pass      |
+| Fruits and vegatables Link       | Click                         | Redirect all products in Fruits and vegatables page          | Pass      |
+| Dairy and Eggs Link              | Click                         | Redirect all products in Dairy and Eggs page                 | Pass      |
+| Beverages Link                   | Click                         | Redirect all products in Beverages page                      | Pass      |
+| Bakery Link                      | Click                         | Redirect all products in Bakery page                         | Pass      |
+| Meat and Seafood Link            | Click                         | Redirect all products in BakeryMeat and Seafood page         | Pass      |
+| All Categories Link              | Click                         | Redirect all the products in all the pages                   | Pass      |
+| Special Offers Dropdown          | Click                         | Open special offers in the Page                              | Pass      |
+| All Arivalls link                | Click                         | Open All Arivalls Page                                       | Pass      |
+| Deals Link                       | Click                         | Open Deals Page                                              | Pass      |
 | Contact Link                     | Click                         | Open Contact Page                                            | Pass      |
+| Blog Link                        | Click                         | Open Blog Page                                               | Pass      |
 | Hamburger Menu                   | Responsive                    | Display when screen size reduces to medium size              | Pass      |
 | Home Link                        | Click                         | Redirect to home                                             | Pass      |
 |                                  |                               | (Only displays when screen size reduces to medium size       | Pass      |
@@ -379,20 +378,18 @@ The Website was tested on Google Chrome, Firefox, Safari browsers with no issues
 | Newsletter Email field           | Insert incorrect/empty format | Error message displays                                       | Pass      |
 | Subscribe Button                 | Click                         | Form submit                                                  | Pass      |
 | Subscribe Button                 | Click                         | Message appears saying Thank You for subscribing!            | Pass      |
-| Home Decor Link                  | Click                         | Open Home Decor Page                                         | Pass      |
-| Interior Design Services Link    | Click                         | Open Interior Design Services Page                           | Pass      |
+| All Categories Link              | Click                         | All Categories Page                                          | Pass      |
+| Special Offers Link              | Click                         | Open Special Offers Page                                     | Pass      |
 | Contact Link                     | Click                         | Open Contact Page                                            | Pass      |
-| Client Testimonials Link         | Click                         | Open Testimonials Page                                       | Pass      |
-| Privacy Policy Link              | Click                         | Open Privacy Policy Page in new tab                          | Pass      |
-| Sponsor Image Links              | Click                         | Open correct location in new tab                             | Pass      |
+| Blog Link                        | Click                         | Open Blog Page                                               | Pass      |
 
 
 ### Home Page
 
 | Element                | Action | Expected Result                    | Pass/Fail |
 |------------------------|--------|------------------------------------|-----------|
-| Shop Now Button        | Click  | Open Home Decor Page               | Pass      |
-| Design Services Button | Click  | Open Interior Design Services Page | Pass      |
+| Shop Now Button        | Click  | Open All Categorie Page            | Pass      |
+
 
 
 ### All Auth Pages 
@@ -450,7 +447,7 @@ The Website was tested on Google Chrome, Firefox, Safari browsers with no issues
 | Sign Out  button                | Click                                     | Success message confirming Sign Out  appears | Pass      |
 
 
-### Home Decor
+### All Categorie
 
 | Element                         | Action  | Expected Result                                                                                | Pass/Fail |
 |---------------------------------|---------|------------------------------------------------------------------------------------------------|-----------|
@@ -469,6 +466,7 @@ The Website was tested on Google Chrome, Firefox, Safari browsers with no issues
 | Confirm Delete -  cancel button | Click   | Redirect to home decor page                                                                    | Pass      |
 | Confirm Delete -  delete button | Click   | Delete product                                                                                 | Pass      |
 | Confirm Delete -  delete button | Click   | Success message appears confirming product deleted successfully                                | Pass      |
+| Comment box                     | Click   | comment will be shown down with the user name                                                  | pass      |
 
 
 ### Product Detail
@@ -487,8 +485,10 @@ The Website was tested on Google Chrome, Firefox, Safari browsers with no issues
 | If Superuser in session: |                           |                                                                                              |           |
 | Edit product link        | Click                     | Redirect to edit product page                                                                | Pass      |
 | Delete product link      | Click                     | Open delete confirmation  page                                                               | Pass      |
+| Comment box              | Click                     | comment will be shown down with the user name                                                | pass      |
 
-### Home Decor Management 
+
+### Product Management 
 
 | Element                         | Action                | Expected Result                                                                                                            | Pass/Fail |
 |---------------------------------|-----------------------|----------------------------------------------------------------------------------------------------------------------------|-----------|
@@ -623,140 +623,54 @@ The Website was tested on Google Chrome, Firefox, Safari browsers with no issues
 | Back to Profile button | Click             | Redirect to profile page                                                                                                       | Pass      |
 
 
-### Interior Design Services
+### Special Offers
 
 | Element                  | Action  | Expected Result                                 | Pass/Fail |
 |--------------------------|---------|-------------------------------------------------|-----------|
-| Service Content          | Display | Display correct service image, type and content | Pass      |
+| product Content          | Display | Display correct service image, type and content | Pass      |
 | Enquire Now button       | Click   | Open Contact page                               | Pass      |
 | If Superuser in session: |         |                                                 |           |
-| Edit service link        | Click   | Redirect to edit service page                   | Pass      |
-| Delete service link      | Click   | Open delete confirmation  page                  | Pass      |
+| Edit product link        | Click   | Redirect to edit service page                   | Pass      |
+| Delete product link      | Click   | Open delete confirmation  page                  | Pass      |
 
-### Interior Design Management
+### Product Management
 
-| Add Service                     |                       |                                                                                                                            |           |
+| Add product                    |                       |                                                                                                                            |           |
 |---------------------------------|-----------------------|----------------------------------------------------------------------------------------------------------------------------|-----------|
 | Element                         | Action                | Expected Result                                                                                                            | Pass/Fail |
 | Add Service                     | Access                | If a user tries to add a service (by changing the url) without being signed in they are redirected to the login page       | Pass      |
-| Add Service                     | Access                | If a user tries to add a service (by changing the url) without being superuser they are redirected to a custom 403 page    | Pass      |
+| Add product                     | Access                | If a user tries to add a service (by changing the url) without being superuser they are redirected to a custom 403 page    | Pass      |
 | Form Text Input (if required)   | Leave blank           | On Submit: Warning appears, form won't submit                                                                              | Pass      |
 | Form Text Input (if required)   | Just input whitespace | On Submit: Form won't submit                                                                                               | Pass      |
 | Form image select button        | Click                 | Open device storage                                                                                                        | Pass      |
 | Form image select button        | Display               | Chosen image name displayed once selected                                                                                  | Pass      |
 | Form image select button        | Display               | Default image is used if no image is selected                                                                              | Pass      |
-| Cancel button                   | Click                 | Redirect to Interior Design Services page                                                                                  | Pass      |
-| Add Service button(form valid)  | Click                 | Form submit                                                                                                                | Pass      |
-| Add Service button(form valid)  | Click                 | Redirect to Interior Design Services Page with all information displaying correctly                                        | Pass      |
-| Add Service button(form valid)  | Click                 | Success message appears informing the superuser that the service has been added                                            | Pass      |
+| Cancel button                   | Click                 | Redirect to Special Offers page                                                                                  | Pass      |
+| Add product button(form valid)  | Click                 | Form submit                                                                                                                | Pass      |
+| Add product button(form valid)  | Click                 | Redirect to Special Offers Page with all information displaying correctly                                        | Pass      |
+| Add product button(form valid)  | Click                 | Success message appears informing the superuser that the service has been added                                            | Pass      |
 |                                 |                       |                                                                                                                            |           |
-| Edit Service                    |                       |                                                                                                                            |           |
+| Edit product                    |                       |                                                                                                                            |           |
 | Element                         | Action                | Expected Result                                                                                                            | Pass/Fail |
-| Edit Service                    | Access                | If a user tries to edit a service (by changing the url) without being signed in they are redirected to the login page      | Pass      |
-| Edit Service                    | Access                | If a user tries to edit a service (by changing the url) without being superuser they are redirected to a custom 403 page   | Pass      |
-| Edit Service Form               | Display               | Form has all the fields filled out with the original content                                                               | Pass      |
-| Edit Service Form               | Image Field           | Thumbnail of original image is shown                                                                                       | Pass      |
+| Edit product                    | Access                | If a user tries to edit a product (by changing the url) without being signed in they are redirected to the login page      | Pass      |
+| Edit product                    | Access                | If a user tries to edit a service (by changing the url) without being superuser they are redirected to a custom 403 page   | Pass      |
+| Edit product Form               | Display               | Form has all the fields filled out with the original content                                                               | Pass      |
+| Edit product Form               | Image Field           | Thumbnail of original image is shown                                                                                       | Pass      |
 | Form Text Input (if required)   | Leave blank           | On Submit: Warning appears, form won't submit                                                                              | Pass      |
 | Form Text Input (if required)   | Just input whitespace | On Submit: Form won't submit                                                                                               | Pass      |
-| Cancel button                   | Click                 | Redirect to Interior Design Services page                                                                                  |           |
+| Cancel button                   | Click                 | Redirect to Special Offers page                                                                                  |           |
 | Submit button(form valid)       | Click                 | Form submit                                                                                                                | Pass      |
-| Edit Service button(form valid) | Click                 | Redirect to Interior Design Services Page with all information displaying correctly                                        | Pass      |
-| Edit Service button(form valid) | Click                 | Success message appears informing the superuser that the service has been edited                                           | Pass      |
+| Edit product button(form valid) | Click                 | Redirect to Special Offers Page with all information displaying correctly                                        | Pass      |
+| Edit product button(form valid) | Click                 | Success message appears informing the superuser that the service has been edited                                           | Pass      |
 |                                 |                       |                                                                                                                            |           |
 | Confirm Delete Service          |                       |                                                                                                                            |           |
 | Element                         | Action                | Expected Result                                                                                                            | Pass/Fail |
 | Delete Service                  | Access                | If a user tries to Delete a service (by changing the url) without being signed in they are redirected to the login page    | Pass      |
 | Delete Service                  | Access                | If a user tries to Delete a service (by changing the url) without being superuser they are redirected to a custom 403 page | Pass      |
-| Confirm Delete -  cancel button | Click                 | Redirect to Interior Design Services page                                                                                  | Pass      |
+| Confirm Delete -  cancel button | Click                 | Redirect to Special Offers page                                                                                  | Pass      |
 | Confirm Delete -  delete button | Click                 | Delete Service from database                                                                                               | Pass      |
 | Confirm Delete -  delete button | Click                 | Success message appears confirming service deleted successfully                                                            | Pass      |
 
-
-Interior Design Projects
-
-| Element                  | Action  | Expected Result                           | Pass/Fail |
-|--------------------------|---------|-------------------------------------------|-----------|
-| Previous Project Content | Display | Display correct image and location        | Pass      |
-| Project Card             | Hover   | Display Service Type and Project location | Pass      |
-| If Superuser in session: |         |                                           |           |
-| Delete project button    | Display | In top right corner of image              | Pass      |
-| Delete project button    | Click   | Open delete confirmation  page            | Pass      |
-
-
-Interior Design Projects Management
-
-| Add Previous Project            |                       |                                                                                                                            |           |
-|---------------------------------|-----------------------|----------------------------------------------------------------------------------------------------------------------------|-----------|
-| Element                         | Action                | Expected Result                                                                                                            | Pass/Fail |
-| Add Previous Project            | Access                | If a user tries to add a project (by changing the url) without being signed in they are redirected to the login page       | Pass      |
-| Add Previous Project            | Access                | If a user tries to add a project (by changing the url) without being superuser they are redirected to a custom 403 page    | Pass      |
-| Form Text Input (if required)   | Leave blank           | On Submit: Warning appears, form won't submit                                                                              | Pass      |
-| Form Text Input (if required)   | Just input whitespace | On Submit: Form won't submit                                                                                               | Pass      |
-| Service Dropdown                | Click                 | Display all Interior Design Services in Database                                                                           | Pass      |
-| Form image select button        | Click                 | Open device storage                                                                                                        | Pass      |
-| Form image select button        | Display               | Chosen image name displayed once selected                                                                                  | Pass      |
-| Form image select button        | Leave blank           | On Submit: Warning appears, form won't submit                                                                              | Pass      |
-| Cancel button                   | Click                 | Redirect to Interior Design Projects page                                                                                  | Pass      |
-| Add Project button(form valid)  | Click                 | Form submit                                                                                                                | Pass      |
-| Add Project button(form valid)  | Click                 | Redirect to Interior Design Projects Page with all information displaying correctly                                        | Pass      |
-| Add Project button(form valid)  | Click                 | Success message appears informing the superuser that the project has been added                                            | Pass      |
-|                                 |                       |                                                                                                                            |           |
-| Confirm Delete Project Image    |                       |                                                                                                                            |           |
-| Element                         | Action                | Expected Result                                                                                                            | Pass/Fail |
-| Delete Previous Project         | Access                | If a user tries to delete a project (by changing the url) without being signed in they are redirected to the login page    | Pass      |
-| Delete Previous Project         | Access                | If a user tries to delete a project (by changing the url) without being superuser they are redirected to a custom 403 page | Pass      |
-| Confirm Delete -  cancel button | Click                 | Redirect to Interior Design Projects page                                                                                  | Pass      |
-| Confirm Delete -  delete button | Click                 | Delete Interior Design Projects  from database                                                                             | Pass      |
-| Confirm Delete -  delete button | Click                 | Success message appears confirming Interior Design Projects  deleted successfully                                          | Pass      |
-
-
-### Testimonials
-
-| Element                 | Action  | Expected Result                                                                    | Pass/Fail |
-|-------------------------|---------|------------------------------------------------------------------------------------|-----------|
-| Testimonial Content     | Display | Display correct testimonial content, service type, author and date                 | Pass      |
-| Add Testimonial button  | Click   | Open Add testimonial form                                                          | Pass      |
-| Edit testimonial link   | Display | Only display if user is the author of the testimonial or if they are the superuser | Pass      |
-| Edit testimonial link   | Click   | Redirect to edit testimonial page                                                  | Pass      |
-| Delete Testimonial link | Display | Only display if user is the author of the testimonial                              | Pass      |
-| Delete service link     | Click   | Open delete confirmation  page                                                     | Pass      |
-
-
-### Testimonial Management
-
-| Add Testimonial                     |                       |                                                                                                                             |           |
-|-------------------------------------|-----------------------|-----------------------------------------------------------------------------------------------------------------------------|-----------|
-| Element                             | Action                | Expected Result                                                                                                             | Pass/Fail |
-| Add Testimonial                     | Access                | If a user tries to add a testimonial (by changing the url) without being signed in they are redirected to the login page    | Pass      |
-| Form Text Input (if required)       | Leave blank           | On Submit: Warning appears, form won't submit                                                                               | Pass      |
-| Form Text Input (if required)       | Just input whitespace | On Submit: Form won't submit                                                                                                | Pass      |
-| Service Dropdown                    | Click                 | Display all Interior Design Services in Database                                                                            | Pass      |
-| Cancel button                       | Click                 | Redirect to Testimonials page                                                                                               |           |
-| Add Testimonial button(form valid)  | Click                 | Form submit                                                                                                                 | Pass      |
-| Add Testimonial button(form valid)  | Click                 | Redirect to Testimonials Page with all information displaying correctly                                                     | Pass      |
-| Add Testimonial button(form valid)  | Click                 | Success message appears informing the superuser that the testimonial has been added                                         | Pass      |
-|                                     |                       |                                                                                                                             |           |
-|                                     |                       |                                                                                                                             |           |
-| Edit Testimonial                    |                       |                                                                                                                             |           |
-| Element                             | Action                | Expected Result                                                                                                             | Pass/Fail |
-| Edit Testimonial                    | Access                | If a user tries to edit a Testimonial (by changing the url) without being signed in they are redirected to the login page   | Pass      |
-| Edit Testimonial                    | Access                | If a user tries to edit another user's Testimonial (by changing the url) they are redirected to a custom 403 page           | Pass      |
-| Edit Testimonial Form               | Display               | Form has all the fields filled out with the original content                                                                | Pass      |
-| Form Text Input (if required)       | Leave blank           | On Submit: Warning appears, form won't submit                                                                               | Pass      |
-| Form Text Input (if required)       | Just input whitespace | On Submit: Form won't submit                                                                                                | Pass      |
-| Cancel button                       | Click                 | Redirect to Testimonials page                                                                                               |           |
-| Submit button(form valid)           | Click                 | Form submit                                                                                                                 | Pass      |
-| Edit Testimonial button(form valid) | Click                 | Redirect to Testimonials Page with all information displaying correctly                                                     | Pass      |
-| Edit Testimonial button(form valid) | Click                 | Success message appears informing the superuser that the testimonial has been edited                                        | Pass      |
-|                                     |                       |                                                                                                                             |           |
-|                                     |                       |                                                                                                                             |           |
-| Confirm Delete Testimonial          |                       |                                                                                                                             |           |
-| Element                             | Action                | Expected Result                                                                                                             | Pass/Fail |
-| Delete Testimonial                  | Access                | If a user tries to delete a Testimonial (by changing the url) without being signed in they are redirected to the login page | Pass      |
-| Delete Testimonial                  | Access                | If a user tries to delete another user's Testimonial (by changing the url) they are redirected to a custom 403 page         | Pass      |
-| Confirm Delete -  cancel button     | Click                 | Redirect to Testimonials page                                                                                               | Pass      |
-| Confirm Delete -  delete button     | Click                 | Delete Testimonial  from database                                                                                           | Pass      |
-| Confirm Delete -  delete button     | Click                 | Success message appears confirming Testimonial  deleted successfully                                                        | Pass      |
 
 ### Contact
 
@@ -773,27 +687,11 @@ Interior Design Projects Management
 | Submit button(form valid)     | Click                 | Success message appears informing the superuser that the enquiry has been submitted | Pass      |
 | Submit button(form valid)     | Click                 | User receives confirmation email about their enquiry                                | Pass      |
 
-### Enquiries Dashboard
+### Contact
 
-| Element                         | Action          | Expected Result                                                                                                                       | Pass/Fail |
-|---------------------------------|-----------------|---------------------------------------------------------------------------------------------------------------------------------------|-----------|
-| Open Page                       | Access          | If a user tries to access the enquiries dashboard (by changing the url) without being signed in they are redirected to the login page | Pass      |
-| Open Page                       | Access          | If a user tries to access the dashboard (by changing the url) without being superuser they are redirected to a custom 403 page        | Pass      |
-| Email Links                     | Click           | Open Detailed Email View                                                                                                              | Pass      |
-| Email Links                     | If already read | Grey out                                                                                                                              | Pass      |
-|                                 |                 |                                                                                                                                       |           |
-| Enquiry Detail                  |                 |                                                                                                                                       |           |
-| Element                         | Action          | Expected Result                                                                                                                       | Pass/Fail |
-| Back Button                     | Click           | Return to Enquiries Dashboard                                                                                                         | Pass      |
-| Delete Button                   | Click           | Open Confirm Delete page                                                                                                              | Pass      |
-|                                 |                 |                                                                                                                                       |           |
-| Confirm Delete Project Image    |                 |                                                                                                                                       |           |
-| Element                         | Action          | Expected Result                                                                                                                       | Pass/Fail |
-| Delete Enquiry                  | Access          | If a user tries to delete an enquiry (by changing the url) without being signed in they are redirected to the login page              | Pass      |
-| Delete Enquiry                  | Access          | If a user tries to delete an enquiry (by changing the url) without being superuser they are redirected to a custom 403 page           | Pass      |
-| Confirm Delete -  cancel button | Click           | Return to Enquiries Dashboard                                                                                                         | Pass      |
-| Confirm Delete -  delete button | Click           | Delete Enquiry from database                                                                                                          | Pass      |
-| Confirm Delete -  delete button | Click           | Success message appears confirming enquiry  deleted successfully                                                                      | Pass      |
+| Element                       | Action                | Expected Result                                                                     | Pass/Fail |
+|-------------------------------|-----------------------|-------------------------------------------------------------------------------------|-----------|
+| Adding blog links (if required) | Leave blank           | Blog links about the products                          | Pass      |
 
 
 ## Fixed Bugs
