@@ -460,11 +460,42 @@ Custom Error Pages were created to give the user more information on the error a
 - 404 Page Not Found - The page you're looking for doesn't exist.
 - 500 Server Error - Due to an internal error we are unable to process this request.
 
+## Business Model
+
+A grocery store's business model involves offering a diverse product assortment, maintaining strong supplier relationships, implementing competitive pricing, and prioritizing customer service. Utilizing technology for efficiency, engaging in community initiatives, and adapting to market trends contribute to a successful and sustainable operation.
+
+## Marketing Strategy
+
+A number of different marketing strategies have been utilised to promote grocery Store including SEO, content marketing, social media marketing and email marketing. Each of these strategies have been discussed individually below:  
+
+
+### SEO
+Several SEO techniques were undertaken in order to ensure the site ranks highly in search engine results:
+
+**Keywords:** 
+
+A mixture of short tail and long tail keywords were carefully considered for the site. Keyword research was performed by checking Google search results, looking at competitor's keywords and by utilising wordtracker.com. 
+
+An initial list of topics and keywords generated can be seen below. This list was then refined based on relevance and authority.
+
+The most relevant keywords have been added to the site's meta-keywords and meta-description. These keywords have also been carefully included in page titles, headings, site content, `<strong></strong>` tags, image alt attributes and anchor tag links across the site. 
+
+ ![Keywords](docs/readme_images/seo_keywords.png)
+
+
+**Sitemap and robots.txt**
+
+A sitemap file with a list of important page URLs was created to ensure that search engines are able to understand the site's structure and easily navigate through the site. This was made using xml-sitemaps.com.
+
+A robots.txt file was created to tell search engines where they are not allowed to go on the website. This improves SEO by increasing the quality of the site
+
+### Content marketing 
+Elevate  grocery store's brand with content marketing by sharing  fresh product highlights on social media and a blog. Engage customers with valuable content that enhances their shopping experience and builds a loyal community around your store.
 
 ### Social Media Marketing 
-For this site, a Facebook business page has been created for organic social media marketing. The Facebook page includes a 'Shop Now' button which takes the user to the Fresh Nest website. The page pairs well with the content media marketing on the main site as images of previous projects and new product arrivals can be shared easily.
+For this site, a Facebook business page has been created for organic social media marketing.added the wesite link to view products. The page pairs well with the content media marketing on the main site as images of projects and new product arrivals can be shared easily.
 
-![Facebook Page](docs/readme_images/facebook_page.png)
+![Facebook Page](docs/readme_images/facebook.png)
 
 ### Email Marketing
 Visitors to the site can sign up to the newsletter and do not need to have an account to do so. A signup box is included in the footer of the site. This allows the business to share news with customers and potential customers including new products/services and special offers. Mailchimp was used to create this service. 
