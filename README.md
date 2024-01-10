@@ -521,6 +521,25 @@ DATABASES = {
 
 - Push these changes to Github.
 
+### Prepare the environment and settings.py file:
+- In your GitPod workspace, create an env.py file in the main directory.
+- Add the DATABASE_URL value and your chosen SECRET_KEY value to the env.py file. 
+- Update the settings.py file to import the env.py file and add the SECRETKEY and DATABASE_URL file paths.
+- Comment out the default database configuration.
+- Save files and make migrations.
+- Add Cloudinary URL to env.py
+- Add the cloudinary libraries to the list of installed apps.
+- Add the STATIC files settings - the url, storage path, directory path, root path, media url and default file storage path.
+- Link the file to the templates directory in Heroku.
+- Change the templates directory to TEMPLATES_DIR
+- Add Heroku to the ALLOWED_HOSTS list the format ['app_name.heroku.com', 'localhost']
+
+### Create files / directories
+- Create requirements.txt file
+- Create three directories in the main directory; media, storage and templates.
+- Create a file named "Procfile" in the main directory and add the following: web: gunicorn project-name.wsgi
+
+
 ### Update Heroku Config Vars
 Add the following Config Vars in Heroku:
 
@@ -545,14 +564,14 @@ The site is now live and operational.
 
 
 ## Forking this repository
-- Locate the repository at this link [Fresh Nest](https://github.com/mehatabpathan/PP5).
+- Locate the repository at this link [Grocery Store](https://github.com/mehatabpathan/PP5).
 - At the top of the repository, on the right side of the page, select "Fork" from the buttons available. 
 - A copy of the repository is now created.
 
 ## Cloning this repository
 To clone this repository follow the below steps: 
 
-1. Locate the repository at this link [Fresh Nest](https://github.com/mehatabpathan/PP5). 
+1. Locate the repository at this link [Grocery Store](https://github.com/mehatabpathan/PP5). 
 2. Under **'Code'**, see the different cloning options, HTTPS, SSH, and GitHub CLI. Click the prefered cloning option, and then copy the link provided. 
 3. Open **Terminal**.
 4. In Terminal, change the current working directory to the desired location of the cloned directory.
@@ -590,6 +609,7 @@ To clone this repository follow the below steps:
 - [Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/) used to manage Django Forms
 - [Bootstrap 4.6](https://getbootstrap.com/docs/4.6/getting-started/introduction/): CSS Framework for developing responsiveness and styling
 - [Hatchful](https://hatchful.shopify.com/): Used to generate custom logo
+- [Cloudinary](https://cloudinary.com/): the image hosting service used to upload images
 - [Tables Generator](https://www.tablesgenerator.com/markdown_tables): Used to convert excel testing tables to markdown
 - [Sitemap Generator](www.xml-sitemaps.com): used to create sitemap.xml 
 - [Privacy Policy Generator](https://www.privacypolicygenerator.info/): Used to create the site's privacy policy
