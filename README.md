@@ -7,7 +7,7 @@ The payment system uses Stripe. Please note that this website is for educational
 To test this system, test card details can be used. A list of these can be found in Stripe's documentation [here](https://stripe.com/docs/testing#cards).
 
 The live link can be found here - [Grocery Store](https://groceryapp-856a47122c58.herokuapp.com/)
-- The GitHub link can be found here - [Grocery Store](https://github.com/mehatabpathan/PP5.git)
+The GitHub link can be found here - [Grocery Store](https://github.com/mehatabpathan/PP5.git)
 
 ![Static Badge](https://img.shields.io/badge/Last_Commit-January-red)
 ![Static Badge](https://img.shields.io/badge/Contributors-1-blue)
@@ -112,7 +112,7 @@ A positive grocery store user experience involves a well-organized layout, frien
 
 ### Design
 
-The site has a elegant and clean design with the use of gold detail to give the idea of luxury and opulence. 
+The site has a elegant and clean design with the use of light blue detail to give the idea of luxury and opulence. 
 
 #### Colour Scheme
 Colour palette from Coolors
