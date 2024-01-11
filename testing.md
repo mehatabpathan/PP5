@@ -196,20 +196,12 @@ All HTML pages were run through the [W3C HTML Validator](https://validator.w3.or
 | Checkout Success               | No Errors  | No Errors |
 | Profile                        | N/A        | No Errors |
 | Order History                  | N/A        | No Errors |
-| Interior Design Services       | No Errors  | No Errors |
-| Add Interior Design Service    | N/A        | Note      |
-| Edit Interior Design Service   | N/A        | Note      |
-| Delete Interior Design Service | N/A        | No Errors |
-| Interior Design Projects       | No Errors  | No Errors |
-| Add Interior Design Project    | N/A        | Note      |
-| Delete Interior Design         | N/A        | No Errors |
-| Testimonials                   | No Errors  | No Errors |
-| Add Testimonial                | N/A        | No Errors |
-| Edit Testimonial               | N/A        | No Errors |
-| Delete Testimonial             | N/A        | No Errors |
+| Special Offers                 | No Errors  | No Errors |
+| All Arrivals                   | N/A        | Note      |
+| Deals                          | N/A        | No Errors |
+| All Special Offers             | N/A        | No Errors |
 | Contact                        | No Errors  | No Errors |
-| Enquiries Dashboard            | N/A        | No Errors |
-| Enquiry Detail                 | N/A        | No Errors |
+| Blog                           | No Errors  | No Errors |
 | Sign In                        | No Errors  | N/A       |
 | Sign Up                        | No Errors  | N/A       |
 | Log Out                        | N/A        | No Errors |
