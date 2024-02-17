@@ -18,7 +18,6 @@ django-tinymce==3.6.1
 exceptiongroup==1.0.0rc9
 executing==1.2.0
 flake8==6.1.0
-Flask==3.0.0
 google-auth==2.23.0
 google-auth-oauthlib==1.1.0
 gspread==5.11.2
