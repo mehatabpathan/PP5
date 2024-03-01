@@ -46,6 +46,8 @@ class StripeWH_Handler:
         """
         Handle the payment_intent.succeeded webhook from Stripe
         """
+
+        print('IN HPIS')
         intent = event.data.object
         pid = intent.id
         bag = intent.metadata.bag
@@ -104,11 +106,13 @@ class StripeWH_Handler:
                 attempt += 1
                 time.sleep(1)
         if order_exists:
+            print('ORDER EXISTS')
             self._send_confirmation_email(order)
             return HttpResponse(
                 content=f'Webhook received: {event["type"]} | SUCCESS: Verified order already in database',
                 status=200)
         else:
+            print('ORDER DOESNT EXIST')
             order = None
             try:
                 order = Order.objects.create(
@@ -149,6 +153,9 @@ class StripeWH_Handler:
                 return HttpResponse(
                     content=f'Webhook received: {event["type"]} | ERROR: {e}',
                     status=500)
+        print('BEFORE EMAIL')
+        self._send_confirmation_email(order)
+        print('AFTER EMAIL: ')
         self._send_confirmation_email(order)
         return HttpResponse(
             content=f'Webhook received: {event["type"]} | SUCCESS: Created order in webhook',
