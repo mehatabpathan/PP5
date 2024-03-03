@@ -5,24 +5,24 @@
 
 <head>
     {% block meta %}
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Your Grocery Hub - Fresh, quality produce, and essential groceries for your everyday needs. Explore a wide range of products at our convenient location." />
+        content="Your Grocery Hub - Fresh, quality produce, and essential groceries for your everyday needs. Explore a wide range of products at our convenient location.">
     <meta name="keywords"
-        content="grocery store, fresh produce, quality groceries, supermarket, convenient shopping, daily essentials, grocery shopping, local market" />
-    <meta name="author" content="Mehatab Shaik" />
+        content="grocery store, fresh produce, quality groceries, supermarket, convenient shopping, daily essentials, grocery shopping, local market">
+    <meta name="author" content="Mehatab Shaik">
 
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'images/favicon/apple_touch_icon.png' %}" />
-    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'images/favicon/favicon-32x32.png' %}" />
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'images/favicon/apple_touch_icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'images/favicon/favicon-32x32.png' %}">
     {% endblock %} {% block extra_meta %} {% endblock %} {% block corecss %}
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap" />
-    <link rel="stylesheet" href="{% static 'css/base.css' %}" />
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
     {% endblock %} {% block extra_css %} {% endblock %} {% block corejs %}
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
@@ -34,7 +34,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
-        
+
     <!-- Stripe -->
     <script src="https://js.stripe.com/v3/"></script>
     {% endblock %} {% block extra_js %} {% endblock %}
@@ -47,14 +47,15 @@
         <div id="topnav" class="row bg-info d-none d-lg-flex">
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
                 <a href="{% url 'home' %}" class="nav-link main-logo-link">
-                    <img class="logo-font text-black my-0" src="https://res.cloudinary.com/mehatab/image/upload/v1704494468/grocery_d6s1gg.png" alt="logo" />
+                    <img class="logo-font text-black my-0"
+                        src="https://res.cloudinary.com/mehatab/image/upload/v1704494468/grocery_d6s1gg.png" alt="logo">
                 </a>
             </div>
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                 <form method="GET" action="{% url 'products' %}">
                     <div class="input-group w-100">
                         <input class="form-control border border-black rounded-0" type="text" name="q"
-                            placeholder="Search our site" />
+                            placeholder="Search our site">
                         <div class="input-group-append">
                             <button class="form-control btn btn-black border border-black rounded-0" type="submit">
                                 <span class="icon">
@@ -68,14 +69,14 @@
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                 <ul class="list-inline list-unstyled text-center text-lg-right my-0">
                     <li class="list-inline-item dropdown">
-                        <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown"
+                        <a class="text-black nav-link" href="#" id="user-options_1" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
                             <div class="text-center">
                                 <div><i class="fas fa-user fa-lg"></i></div>
                                 <p class="my-0">My Account</p>
                             </div>
                         </a>
-                        <div class="dropdown-menu border-0" aria-labelledby="user-options">
+                        <div class="dropdown-menu border-0" aria-labelledby="user-options_1">
                             {% if request.user.is_authenticated %}
                             {% if request.user.is_superuser %}
                             <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
@@ -138,7 +139,7 @@
     <div class="block-content">{% block content %} {% endblock %}</div>
 
     {% include 'includes/footer.html' %} {% block postloadjs %}
-    <script type="text/javascript">
+    <script>
         $(".toast").toast("show");
     </script>
     {% endblock %}
