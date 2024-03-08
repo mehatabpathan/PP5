@@ -314,9 +314,6 @@ Custom Error Pages were created to give the user more information on the error a
 
 ### Products page
 
-![all products](docs/readme_images/features/products_all.png)
-- When clicking the 'Home Decor' link in the navbar the dropdown menu will show all the different categories including 'Sofas', 'Tables', 'Chairs', 'Lighting' and 'Textiles'. 
-
 ![Products](docs/readme_images/features/products.png)
 
 - The 'All' link will display a list of all products from the database.
@@ -348,7 +345,7 @@ Custom Error Pages were created to give the user more information on the error a
 - Clicking the 'Add to Bag' button takes the number in the input field and adds that amount of products to the bag.
 - Clicking the 'Keep Shopping' button takes the user back to the store.
 
-### Home Decor Management
+
 **Add Product**
 
 ![add product](docs/readme_images/features/productmanagement.png)

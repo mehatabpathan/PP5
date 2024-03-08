@@ -211,11 +211,9 @@ All HTML pages were run through the [W3C HTML Validator](https://validator.w3.or
 | 404.html                       | No errors  | No errors |
 | 500.html                       | No errors  | No errors |
 
-Note: Image upload widget errors
+Note : that this is an issue with the alluath package not with my code.
 
-All forms which include an image upload field show the same error below. This relates to the image upload widget on the form and thus changing the code breaks the field.
-
-![HTML Error](docs/readme_images/add_image_html_error.png)
+![HTML Error](docs/readme_images/validations/htmlallautherror.png)
 
 ### CSS
 
