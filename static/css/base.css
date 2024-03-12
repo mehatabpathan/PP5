@@ -22,6 +22,10 @@ body {
     min-height: 600px;
 }
 
+.product-image {
+    height: 250px !important;
+}
+
 /* from Bulma */
 .icon {
     align-items: center;
