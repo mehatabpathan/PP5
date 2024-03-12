@@ -108,9 +108,7 @@ body {
 }
 
 
-.product-image {
-    height: 250px !important;
-}
+
 .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus,
@@ -406,6 +404,10 @@ footer a:hover {
 
 .product-card:hover {
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.product-image {
+    height: 250px !important;
 }
 
 /* fixed top navbar only on medium and up */
