@@ -22,10 +22,6 @@ body {
     min-height: 600px;
 }
 
-.product-image {
-    height: 250px !important;
-}
-
 /* from Bulma */
 .icon {
     align-items: center;
@@ -111,6 +107,10 @@ body {
     color: white !important;
 }
 
+
+.product-image {
+    height: 250px !important;
+}
 .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus,
