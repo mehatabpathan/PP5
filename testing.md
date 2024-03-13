@@ -232,6 +232,7 @@ No errors were found when passing my CSS files through the official [W3C CSS Val
 ### JSHINT
 All Javascript was passed through [Jshint](https://jshint.com/) with no issues.
 
+
 **Base**
 
 ![base.html JS validation](docs/readme_images/validations/basejs.png)
